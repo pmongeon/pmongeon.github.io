@@ -4,27 +4,13 @@ navbar:
   type: inverse
   left:
     - text: "Home"
-      icon: fa-home
       href: index.html
-    - text: "About me"
-      icon: fa-info
-      href: about.html
-#    - text: "Cost of OA"
-#      href: cost-of-oa.html
-#    - text: "More"
-#      icon: fa-gear
-#      menu:
-#        - text: "Heading 1"
-#        - text: "Page A"
-#          href: page_a.html
-#        - text: "Page B"
-#          href: page_b.html
-#        - text: "---------"
-#        - text: "Heading 2"
-#        - text: "Page C"
-#          href: page_c.html
-#        - text: "Page D"
-#          href: page_d.html
+#    - text: "About me"
+#      href: about.html
+#    - text: "Research"
+#      href: research.html
+#    - text: "CV"
+#      href: cv.hmtl
 output:
   html_document:
     theme: cosmo

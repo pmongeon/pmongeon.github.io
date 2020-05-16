@@ -1,0 +1,26 @@
+---
+title: "Curriculum Vitae"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3  # upto three depths of headings (specified by #, ## and ###)
+    number_sections: true
+    theme: cosmo  # many options for theme, this one is my favorite.
+    highlight: tango  # specifies the syntax highlighting style
+    css: my.css   # you can add your custom css, should be in same folder
+---
+
+#Publications
+##Peer-reviewed publications
+
+```{r echo = FALSE}
+my_articles <- RefManageR::ReadZotero(user = "1558315", .params = list(tag = "my_articles", key = "klolEHkQB72B5TAOm27CE29f"))
+
+
+
+```
+
+
+
+
