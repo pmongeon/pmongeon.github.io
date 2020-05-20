@@ -7,9 +7,6 @@
         <title>Philippe Mongeon</title>
         <link rel="stylesheet" href="main.css">
     </head>
-    <header>
-        ajajajsdjaaj
-    </header>
     <body>
         <div class="leftsidebar">
             <h1>Menu</h1>
@@ -19,14 +16,49 @@
             </ul>
         </div>
         <div class="main-content">
-            <h1>About me</h1>
-            <p>
-            Bienvenue dans Brackets, un éditeur de code open source qui comprend et facilite la conception de sites web. Il s’agit d’un éditeur à la fois léger et puissant qui intègre des outils visuels directement dans son interface, de sorte que chaque opération peut devenir un véritable jeu d’enfant.
-            </p>
+            <iframe class="rmd"
+                    id="main"
+                    src="similarity_matrix.html" 
+                    frameborder="o"
+                    onload="setIframeHeight(this.id)"
+                    allowfullscreen>
+            </iframe>
         </div>
+
+        
+<script>
+    $(function(){
+    
+            var iFrames = $('iframe');
+     
+    	function iResize() {
+    	
+    		for (var i = 0, j = iFrames.length; i < j; i++) {
+    		  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
+    	    }
+    	    
+        	if ($.browser.safari || $.browser.opera) { 
+        	
+        	   iFrames.load(function(){
+        	       setTimeout(iResize, 0);
+               });
+            
+        	   for (var i = 0, j = iFrames.length; i < j; i++) {
+        			var iSource = iFrames[i].src;
+        			iFrames[i].src = '';
+        			iFrames[i].src = iSource;
+               }
+               
+        	} else {
+        	   iFrames.load(function() { 
+        	       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+        	   });
+        	}
+        
+        });
+
+        </script>
+        
         
     </body>
-    <footer>
-        footer
-    </footer>
 </html>
