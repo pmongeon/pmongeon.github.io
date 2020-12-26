@@ -1,20 +1,20 @@
-name: "Philippe Mongeon"
+name: "qssRlab"
 navbar:
-  title: "Philippe Mongeon"
+  title: "qssRlab"
   type: inverse
   left:
     - text: "Home"
       href: index.html
-#    - text: "About me"
+#    - text: "About"
 #      href: about.html
-#    - text: "Research"
+#    - text: "Projects"
 #      href: research.html
-#    - text: "CV"
-#      href: cv.hmtl
+#    - text: "Code"
+runtime: shiny
 output:
   html_document:
-    theme: cosmo
-    highlight: textmate
+    theme: lumen
+    highlight: tango
     include:
       after_body: footer.html
     css: styles.css
