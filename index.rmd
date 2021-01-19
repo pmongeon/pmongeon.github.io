@@ -1,7 +1,4 @@
 ---
-  title: "qssRlab"
+  title: "Philippe Mongeon "
 ---
-  
-  ```{r echo=FALSE}
-DT::datatable(iris)
-```
+  Coming soon...
