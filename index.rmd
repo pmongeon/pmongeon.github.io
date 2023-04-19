@@ -1,4 +1,13 @@
 ---
-  title: "Philippe Mongeon "
 ---
-  Coming soon...
+---
+
+If your looking for my course websites, here they are:
+
+-   **Information in Society** (<https://pmongeon.github.io/information-in-society/>)
+
+-   **Data** **Management** (<https://pmongeon.github.io/info6540/>)
+
+-   **Introduction to Data Science** (<https://pmongeon.github.io/info6270/>)
+
+-   **Bibliometrics and Scholarly Communication** (<https://pmongeon.github.io/bibliometrics-and-scholarly-communication/>)
