@@ -1,0 +1,78 @@
+---
+title: "Wordclouds"
+author: "Philippe Mongeon"
+---
+
+```{r}
+library(tidyverse)
+library(wordcloud2)
+
+data<-readxl::read_xlsx("EDIA OA Final Set- cleaned metadata.xlsx")
+
+
+wc<-data %>%
+  select(`Publication Title`) %>% 
+  count(`Publication Title`, sort=T) %>% 
+  mutate(`Publication Title`= ifelse(`Publication Title`== 'Open Access Scholarly Publishing Association',"OASPA",`Publication Title`)) %>% 
+  wordcloud2(size = 0.25, 
+             minRotation = -pi/2, # Min roation is 90 degrees
+             maxRotation = -pi/2, # Max rotation is 90 degrees
+             rotateRatio = 0, # percentage of words to rotate (none, in this case)
+             shape = "circle",
+             color="black")
+
+
+library(webshot)
+library("htmlwidgets")
+
+
+# save it in html
+saveWidget(wc,"wordcloud.html",selfcontained = F)
+
+# and in png or pdf
+webshot("wordcloud.html","wordcloud.png", delay =5, vwidth = 480, vheight=480)
+```
+
+```{r}
+{r}
+library(tidyverse)
+library(wordcloud2)
+library(readxl)
+library(textstem)
+library(tidytext)
+
+
+
+data<-read_tsv("keywords.txt")
+
+# Extract and clean keywords
+data <- data %>% 
+  separate_rows(keywords, sep = ",") %>%
+  mutate(keywords = str_squish(keywords)) %>% 
+  mutate(keywords = str_to_lower(keywords)) %>% 
+  mutate(keywords = lemmatize_strings(keywords)) %>% 
+  mutate(keywords = str_replace_all(keywords, "open-access","open access")) %>%
+  drop_na() 
+  
+
+data %>%
+  select(keywords) %>% 
+  count(keywords, sort=T) %>% 
+  wordcloud2(size = 0.75, 
+             minRotation = -pi/2, # Min roation is 90 degrees
+             maxRotation = -pi/2, # Max rotation is 90 degrees
+             rotateRatio = 0, # percentage of words to rotate (none, in this case)
+             shape = "circle",
+             color="black")
+
+
+library(webshot)
+library("htmlwidgets")
+
+
+# save it in html
+saveWidget(wc,"wordcloud_keywords.html",selfcontained = F)
+
+# and in png or pdf
+webshot("wordcloud_keywords.html","wordcloud_keywords.png", delay =5, vwidth = 300, vheight=300)
+```
