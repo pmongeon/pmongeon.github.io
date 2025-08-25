@@ -1,0 +1,71 @@
+---
+title: "An Open Data Set of Scholars on Twitter"
+subtitle: (Data paper)
+date: 2023-05-01
+author:
+  - Philippe Mongeon
+  - Timothy Bowman
+  - Rodrigo Costas
+authors:
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: true
+    email: pmongeon@dal.ca
+    affiliations:
+      - ref: dal
+  - name: Timothy Bowman
+    orcid: 0000-0003-0247-4771
+    corresponding: false
+    affiliations: 
+      - ref: wayne
+  - name: Rodrigo Costas
+    orcid: 0000-0002-7465-6462
+    corresponding: false
+    affiliations: 
+      - ref: cwts
+      - ref: stellenbosch
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: cwts
+    name: Leiden University
+    address: Leiden, Netherlands
+  - id: wayne
+    name: Wayne State University
+  - id: stellenbosch
+    name: Stellenbosch University
+categories: 
+  - Altmetrics
+  - Twitter
+  - Open data
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1162/qss_a_00250
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Mongeon, P., Bowman, T. D., & Costas, R. (2023). An open data set of scholars on Twitter. *Quantitative Science Studies*, 1‑11. <https://doi.org/10.1162/qss_a_00250>
+
+# Abstract
+
+The role played by research scholars in the dissemination of scientific knowledge on social media has always been a central topic in social media metrics (altmetrics) research. Different approaches have been implemented to identify and characterize active scholars on social media platforms like Twitter. Some limitations of past approaches were their complexity and, most importantly, their reliance on licensed scientometric and altmetric data. The emergence of new open data sources such as OpenAlex or Crossref Event Data provides opportunities to identify scholars on social media using only open data. This paper presents a novel and simple approach to match authors from OpenAlex with Twitter users identified in Crossref Event Data. The matching procedure is described and validated with ORCID data. The new approach matches nearly 500,000 matched scholars with their Twitter accounts with a level of high precision and moderate recall. The data set of matched scholars is described and made openly available to the scientific community to empower more advanced studies of the interactions of research scholars on Twitter.
+
+# Key figures
+
+![Results of the matching for each criterion](images/clipboard-2092829500.png){fig-align="center" width="800"}

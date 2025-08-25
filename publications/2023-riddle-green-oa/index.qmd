@@ -1,0 +1,82 @@
+---
+title: "The State of Green Open Access in Canadian Universities"
+subtitle: (Article)
+date: 2023-12-20
+author:
+  - Poppy Riddle
+  - Marc-André Simard
+  - Pallavi Gone
+  - Vinson Li
+  - Philippe Mongeon
+authors:
+  - name: Poppy Riddle 
+    orcid: 0000-0001-7862-7848
+    corresponding: true
+    email: pnriddle@dal.ca
+    affiliations: 
+      - ref: dal
+  - name: Marc-André Simard
+    orcid: 0000-0003-3795-0053
+    corresponding: false
+    affiliations:
+      - ref: udem
+  - name: Pallavi Gone
+    orcid: 0000-0003-2382-1197
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Vinson Li
+    orcid: 0000-0002-2937-2305
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations: 
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: udem
+    name: Université de Montréal
+    address: Montréal, Québec, Canada
+categories: 
+  - Open Access
+  - Libraries
+  - Canada
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.5206/cjils-rcsib.v46i2.15358
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Riddle, P., Simard, M.-A., Gone, P., Li, V. & Mongeon, P. (2023). The state of green open access in Canadian universities. *The Canadian Journal of Information and Library Science / La Revue canadienne des sciences de l’information et de bibliothéconomie*, *46*(2), 1–25. <https://doi.org/10.5206/cjils-rcsib.v46i2.15358>
+
+# Abstract
+
+This study investigates the use of institutional repositories for self-archiving peer-reviewed work in the U15 (an association of fifteen Canadian research-intensive universities). It relates usage with university open access (OA) policy types and publisher policy embargoes. We show that of all articles found in OpenAlex attributed to U15 researchers, 45.1 to 56.6% are available as Gold or Green OA, yet only 0.5 to 10.7% (mean 4.2%) of these can be found on their respective U15 IRs. Our investigation shows a lack of OA policies from most institutions, journal policies with embargoes exceeding 12 months, and incomplete policy information.
+
+# Résumé
+
+Cet article étudie l'utilisation des dépôts institutionnels pour l’autoarchivage des publications évaluées par les pairs parmi les universités du U15 (une association de quinze universités canadiennes axées sur la recherche). Il combine l'utilisation de ces dépôts avec les types de stratégies de libre accès des universités ainsi que les politiques d’embargo des éditeurs scientifiques. Nos résultats démontrent que les articles attribués aux chercheuses et aux chercheurs des U15 ont des taux de disponibilité en libre accès doré et vert variant de 45,1 à 56,6%, mais seulement 0,5 à 10,7% (moyenne de 4,2%) d'entre eux peuvent être trouvés dans les dépôts institutionnels de leur université. Notre enquête révèle également une absence de politiques de libre accès dans la plupart des institutions, des politiques de libre accès de revues avec des embargos de plus de 12 mois et des informations incomplètes.
+
+# Key figures
+
+![Number of publications and OA status for OpenAlex works by the Canadian U15 universities. The percentages shown are of the number of works attributed to each university.](images/clipboard-890811151.png){fig-align="center" width="800"}

@@ -1,0 +1,14 @@
+/* css styles */
+table {
+  border-collapse: collapse;
+  border: none;
+}
+
+table, th, td {
+  border: none !important;
+}
+
+a.website-link i {
+  margin-right: 6px;
+  color: #0077cc;
+}

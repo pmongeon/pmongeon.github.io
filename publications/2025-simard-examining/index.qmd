@@ -1,0 +1,84 @@
+---
+title: "Examining the Geographic and Linguistic Coverage of Gold and Diamond Open Access Journals in OpenAlex, Scopus, and Web of Science"
+subtitle: (Article)
+date: 2025-05-27
+author:
+  - Marc-André Simard
+  - Isabel Basson
+  - Madelaine Hare
+  - Vicnent Larivière
+  - Philippe Mongeon
+authors:
+  - name: Marc-André Simard
+    orcid: 0000-0003-3795-0053
+    corresponding: true
+    email: marc-andre.simard.1@umontreal.ca
+    affiliations: 
+      - ref: udem
+  - name: Isabel Basson
+    orcid: 0000-0003-3795-0053
+    corresponding: false
+    affiliations: 
+      - ref: udem
+  - name: Madelaine Hare
+    orcid: 0000-0002-2123-9518
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Vincent Larivière
+    orcid: 0000-0002-2733-0689
+    corresponding: false
+    affiliations: 
+      - ref: udem
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: udem
+    name: Université de Montréal
+    address: Montréal, Québec, Canada
+categories: 
+  - Open Access
+  - Databases
+  - Countries
+  - Languages
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1162/QSS.a.1
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Citation
+
+Simard, M.-A., Basson, I., Hare, M., Larivière, V., & Mongeon, P. (2025). Examining the geographic and linguistic coverage of gold and diamond open access journals in OpenAlex, Scopus and Web of Science. *Quantitative Science Studies*, 1–29. <https://doi.org/10.1162/QSS.a.1>
+
+# Abstract
+
+Diamond open access (OA) is a publishing model that is free for both authors and readers, but its lack of indexing in major bibliographic databases compared to gold journals presents challenges in assessing its uptake. Furthermore, the characteristics of diamond journals, such as language and country of publication, have often been used to support the argument that they are more diverse and serve national research communities. However, there is a notable lack of empirical evidence regarding their geographical and linguistic characteristics. Using the Directory of Open Access Journals (DOAJ) as a benchmark, this paper investigates OA journals through their coverage in OpenAlex, Web of Science (WoS) and Scopus by field, country, and language. The results show the lower coverage of diamond journals in WoS and Scopus and confirm the national scope of diamond journals compared to gold. The share of English-only journals is considerably higher among gold journals in every database. High-income countries have the highest share of authorship in every domain and type of journal, except for diamond journals in the social sciences and humanities. Understanding the current landscape of diamond OA indexing can aid the scholarly communications community and decision-makers in advancing policy and practices toward more inclusive OA models.
+
+# Key figures
+
+![Share of journals by language, domain, and OA type.](images/image.png){fig-align="center" width="600"}
+
+![Share of journals by publishing country, domain, and OA type](images/publisher_region.png){fig-align="center" width="600"}
+
+# Links
+
+-   [Full paper](https://direct.mit.edu/qss/article/doi/10.1162/qss.a.1/130805)
+-   [Code](https://pmongeon.github.io/doaj_coverage.html)

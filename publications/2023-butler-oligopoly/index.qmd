@@ -1,0 +1,82 @@
+---
+title: "The Oligopoly’s Shift to Open Access: How the Big Five Academic Publishers Profit from Article Processing Charges "
+subtitle: (Article)
+date: 2023-11-01
+author:
+  - Leigh-Ann Butler 
+  - Lisa Matthias 
+  - Marc-André Simard 
+  - Philippe Mongeon 
+  - Stefanie Haustein
+authors:
+  - name: Leigh-Ann Butler 
+    orcid: 0000-0002-3385-4729
+    corresponding: false
+    affiliations: 
+      - ref: uottawa
+  - name: Lisa Matthias 
+    orcid: 0000-0002-2612-2132
+    corresponding: false
+    affiliations:
+      - ref: freie
+  - name: Marc-André Simard
+    orcid: 0000-0003-3795-0053
+    corresponding: false
+    affiliations: 
+      - ref: udem
+  - name: Philippe Mongeon 
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Stefanie Haustein
+    orcid: 0000-0003-0157-1430
+    corresponding: true
+    email: stefanie.haustein@uottawa.ca
+    affiliations: 
+      - ref: uottawa
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: uottawa
+    name: University of Ottawa
+  - id: udem
+    name: Université de Montréal
+  - id: freie
+    name: Freie Universität Berlin
+
+categories: 
+  - Scholarly publishing
+  - Open Access
+  
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1162/qss_a_00272
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Butler, L.-A., Matthias, L., Simard, M.-A., Mongeon, P., & Haustein, S. (2023). The oligopoly’s shift to open access: How the big five academic publishers profit from article processing charges. *Quantitative Science Studies*, *4*(4), 778–799. <https://doi.org/10.1162/qss_a_00272>
+
+# Abstract
+
+We aim to estimate the total amount of article processing charges (APCs) paid to publish open access (OA) in journals controlled by the five large commercial publishers (Elsevier, Sage, Springer Nature, Taylor & Francis, and Wiley) between 2015 and 2018. Using publication data from WoS, OA status from Unpaywall, and annual APC prices from open data sets and historical fees retrieved via the Internet Archive Wayback Machine, we estimate that globally authors paid \$1.06 billion in publication fees to these publishers from 2015–2018. Revenue from gold OA amounted to \$612.5 million, and \$448.3 million was obtained for publishing OA in hybrid journals. Among the five publishers, Springer Nature made the most revenue from OA (\$589.7 million), followed by Elsevier (\$221.4 million), Wiley (\$114.3 million), Taylor & Francis (\$76.8 million), and Sage (\$31.6 million). With Elsevier and Wiley making most of their APC revenue from hybrid fees and others focusing on gold, different OA strategies could be observed between publishers.
+
+# Key figures
+
+![Total amount of gold and hybrid APCs per publisher per year](images/clipboard-276966440.png){fig-align="center"}

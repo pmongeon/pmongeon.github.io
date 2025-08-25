@@ -1,0 +1,15 @@
+---
+title: "Philippe Mongeon"
+image: images/pmongeon.jpg
+about:
+  template: jolla
+  image-shape: round
+  image-width: 250px
+  links:
+    - icon: linkedin
+      href: https://www.linkedin.com/in/philippe-mongeon/
+    - icon: envelope
+      href: mailto:pmongeon@dal.ca
+---
+
+Associate Professor and Chair of the [Department of Information Science](https://www.dal.ca/faculty/management/faculty-staff/information-science.html) at [Dalhousie University](https://www.dal.ca/), Director of the [QSSLab](https://qsslab.github.io), Editor-in-Chief of [CJILS-RCSIB](https://www.erudit.org/en/journals/cjils/), and associate member of [CIRST](https://www.cirst.uqam.ca/en/).
