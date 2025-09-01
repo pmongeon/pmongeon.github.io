@@ -116,7 +116,7 @@ Since the reports produced by GESAMP have employed different formats and address
 
 This descriptive study uses a bibliometric approach to measure engagement with GESAMP publications, and we thus define engagement as references to GESAMP publications in other documents. Specifically, we aim to collect evidence of engagement in three social spheres (research, policy, and news media), each represented by a distinct type of document (peer-reviewed research outputs, policy documents, and news items). We use 'engagement' as an all-encompassing term that encompasses all forms and varying degrees of engagement. Forms of engagement can include a mention of GESAMP or of a specific GESAMP publication, or the citation of a GESAMP publication in a research article. In either case, the mention or reference to GESAMP can occur without an in-depth report or use of the information included in the GESAMP publication, which we could qualify as a weak form of engagement; on the other hand, the GESAMP publication may be extensively discussed in the referencing or mentioning piece, which would signal a stronger form of engagement. Our work does not account for such variations in the degree of engagement.
 
-As mentioned in the introduction, measuring the use of grey literature is methodologically challenging, primarily due to the lack of data infrastructures specifically designed for this purpose. Similarly, there are relatively standard ways of measuring engagement with scholarly outputs in social media, such as PlumX and Altmetric.com. However, these databases only cover gray literature that contains references to scholarly outputs with DOIs for the purpose of identifying citations *to* scholarly outputs *in* grey literature and other documents such as social media, blogs, and news media. These tools, abundantly used in bibliometric research, are thus not helpful for our purposes, and we instead had to rely on various manual searches for GESAMP and GESAMP publications in different databases that index the types of documents we are interested in. We describe the data collection process in the following sections.
+As mentioned in the introduction, measuring the use of grey literature is methodologically challenging, primarily due to the lack of data infrastructures specifically designed for this purpose. Similarly, there are relatively standard ways of measuring engagement with scholarly outputs in social media, such as PlumX and Altmetric.com. However, these databases only cover gray literature that contains references to scholarly outputs with DOIs for the purpose of identifying citations *to* scholarly outputs *in* grey literature and other documents such as social media, blogs, and news media. These tools, which are widely used in bibliometric research, are not helpful for our purposes, and we therefore had to rely on various manual searches for GESAMP and GESAMP publications in different databases that index the types of documents we are interested in. We describe the data collection process in the following sections.
 
 ## Data collection
 
@@ -145,7 +145,7 @@ For each citing document, we retrieved the publication year and the journal.
 
 ### Policy Citations
 
-We used the Overton database to collect citations to GESAMP publications in policy documents. Overton is the largest searchable index of policy documents, guidelines, think tank publications and working papers. The Overton database provides citation contexts by indicating where a scholarly output is used in the text of a policy document (when a bibliography section is provided in a policy document, it maps to its DOI) [@szomszor2022overton]. As the referencing practices of grey literature can vary, Overton typically relies on a set of scored features to capture citations. If the overall score exceeds a certain threshold, the citation context is matched to Crossref to capture citations to scholarly literature or the rest of the Overton database for policy documents. Overton also provides data such as authors of policy documents, source type (e.g., government, think tank), document topics, associated Sustainable Development Goals and the name of the source organization that produced the policy document (e.g., UNESCO, Institute for European Environmental Policy, Government of Canada).
+To collect citations to GESAMP publications in policy documents, we used the Overton database, an index of policy documents, guidelines, think tank publications and working papers, with a better coverage than alternative data sources such as Altmetric.com [@maleki2024; @murat2023; @dorta-gonzález2024]. Overton provides citation contexts by indicating where a scholarly output is used in the text of a policy document (when a bibliography section is provided in a policy document, it maps to its DOI) [@szomszor2022overton]. As the referencing practices of grey literature can vary, Overton typically relies on a set of scored features to capture citations. If the overall score exceeds a certain threshold, the citation context is matched to Crossref to capture citations to scholarly literature or the rest of the Overton database for policy documents. Overton's records include information on the authors of policy documents, source type (e.g., government, think tank), document topics, associated Sustainable Development Goals and the name of the source organization that produced the policy document (e.g., UNESCO, Institute for European Environmental Policy, Government of Canada), which can provide insights into not just how many policy documents cite GESAMP publications, but also who cites them and in what context.
 
 We searched for each individual GESAMP publication in Overton using their titles, and we also searched for the term "GESAMP". We identified most (118 out of 120) GESAMP publications in Overton. Two GESAMP publications – Report of the 32nd Session of GESAMP (#73) and Guidance on Assessment of Sediment Quality (#4) – are unavailable digitally as of December 2024. Thus, they were not included in the Overton database, and we were unable to collect policy citations for these two documents.
 
@@ -243,7 +243,7 @@ read_xlsx("data/tables.xlsx", sheet = "Table4") %>%
 
 ![](images/Fig4.jpg){fig-align="center" width="900"}
 
-@tbl-5 shows the top 15 report-level policy citations to GESAMP Reports and Studies. Notably, 11 of the 15 publications were produced in the 2000s, despite GESAMP reports dating back to the 1960s. This indicates that GESAMP reports have informed policymaking in recent years, perhaps due to GESAMP establishing itself as an organization in its first few decades when grey literature was more difficult to source online. However, one report from the 1980s and three from the 1990s received significant engagement in policy documents: the 1980 report Interchange of Pollutants Between the Atmosphere and the Ocean, for example, received the third highest amount of policy mentions. The top two most cited reports are from more recent years and are complementary documents: Parts 1 (#90) and 2 (#93) of Sources, Fate and Effects of Microplastics in the Marine Environment appear to reflect important concerns in the policy sphere in recent years.
+@tbl-5 shows the top 15 report-level policy citations to GESAMP Reports and Studies. Notably, 11 of the 15 publications were produced in the 2000s, despite GESAMP reports dating back to the 1960s. This suggests that GESAMP reports have influenced policymaking in recent years, possibly due to the organization establishing itself during its first few decades, when grey literature was more challenging to access online. However, one report from the 1980s and three from the 1990s received significant engagement in policy documents. The 1980 report, "Interchange of Pollutants Between the Atmosphere and the Ocean," for example, received the third-highest amount of policy mentions. The top two most cited reports are from more recent years and are complementary documents: Parts 1 (#90) and 2 (#93) of Sources, Fate and Effects of Microplastics in the Marine Environment appear to reflect important concerns in the policy sphere in recent years.
 
 ```{r message = FALSE, warning=FALSE}
 #| label: tbl-5 
@@ -278,17 +278,71 @@ read_xlsx("data/tables.xlsx", sheet = "Table6") %>%
 
 # Discussion and Conclusion
 
-This study reveals that, since Cordes (2003) and MacDonald et al. (2004), there has been a steady increase in the number of citations to GESAMP publications in scholarly literature, with a notable rise since 2016. This trend is noticeable in news and policy documents, with mentions increasing steadily from 2000 onwards. These trends may be attributed to increased public awareness of climate change and ocean pollution. For instance, the UN's First World Ocean Assessment, released in 2017, exposed the degraded state of the oceans (UNESCO, 2017) and catalyzed national action. Canada, for example, launched a \$1.5 billion Oceans Protection Plan (OPP), the largest federal government investment in ocean protection (DFO Maritimes Region OPP Atlantic Hub, 2020). Such efforts around the globe may have spurred research drawing on GESAMP publications. As 2021 marked the beginning of the UN Decade of Ocean Science for Sustainable Development, GESAMP reports are likely to continue being needed and used, as evidenced by a rise in news mentions in 2022.  
+## Summary of findings
 
-Scientific attention, as measured by the number of citations, is primarily observed in fields and journals focused on environmental and marine pollution, such as Marine Pollution Bulletin, Science of the Total Environment, or Environmental Pollution, as they tend to cite GESAMP the most. However, Ocean & Coastal Management and Marine Policy are also among the top citing journals, showing environmental management research is another field interested in GESAMP’s work. Moreover, mentions in policy documents indicate the relevance of GESAMP for governance and official bodies. Although it’s mostly UN organizations that draw from GESAMP, the expert group is also referenced in documents produced by the Canadian and United Kingdom governments, as well as by organizations such as the International Union for Conservation of Nature.
+This study reveals a steady increase in the number of citations to GESAMP publications in scholarly literature, with a notable rise since 2016.
 
-The prevalence of attention to Sources, fate, and effects of microplastics in the marine environment (Parts 1 and 2) reifies the importance of plastic pollution, especially microplastics, particularly in recent years. As a result of the degradation of plastic components in ocean waters, microplastics pose several threats to marine life and human health through their ingestion and accumulation in the food chain. These reports were highly discussed in the news media upon publication. In this regard, GESAMP work has been foundational in estimating the magnitude of the problem and fostering a deeper understanding of the issue. This also illustrates how scientific advisory bodies play a crucial role in identifying and developing knowledge on emerging public issues by mobilizing resources on a larger scale. Overall, pollution, particularly from plastics, oil, or chemicals, is central to GESAMP's most cited and mentioned work, thus highlighting its position as a key actor in addressing these issues. We also observe that GESAMP's most frequently mentioned work in policy documents and news media was published in recent years, a stark contrast to citations. This is likely the result of two phenomena: 1) the comparatively quicker pace at which public attention may accumulate to alternative formats, and 2) digital transformations that make relevant information more easily accessible, especially to policymakers. 
+These trends align with an increased awareness of climate change and ocean pollution. For instance, the UN's First World Ocean Assessment, released in 2017, exposed the degraded state of the oceans (UNESCO, 2017) and catalyzed national action. Canada, for example, launched a \$1.5 billion Oceans Protection Plan (OPP), the largest federal government investment in ocean protection (DFO Maritimes Region OPP Atlantic Hub, 2020). Such efforts around the globe may have spurred research drawing on GESAMP publications. As 2021 marked the beginning of the UN Decade of Ocean Science for Sustainable Development, GESAMP reports are likely to continue being needed and used.
+
+GESAMP publications are cited in a range of journals, such as Marine Pollution Bulletin, Science of the Total Environment, and Environmental Pollution.
+
+Moreover, mentions in policy documents indicate the relevance of GESAMP for governance and official bodies. Although it’s mostly UN organizations that draw from GESAMP, the expert group is also referenced in documents produced by the Canadian and United Kingdom governments, as well as by organizations such as the International Union for Conservation of Nature.
+
+High levels of attention to specific GESAMP publications, such as *Sources, fate, and effects of microplastics in the marine environment* *(Parts 1 and 2)*, reiterate the importance of plastic pollution, especially microplastics, particularly in recent years.
+
+Plastic pollution in the oceans has been a topic of high interest in recent years. As a result of the degradation of plastic components in ocean waters, microplastics pose several threats to marine life and human health through their ingestion and accumulation in the food chain. These reports were highly discussed in the news media upon publication. Overall, pollution, particularly from plastics, oil, or chemicals, is central to GESAMP's most cited and mentioned work. We also observe that GESAMP's most frequently mentioned work in policy documents and news media was published in recent years, a stark contrast to citations. This is likely the result of two phenomena: 1) the comparatively quicker pace at which public attention may accumulate to alternative formats, and 2) digital transformations that make relevant information more easily accessible, especially to policymakers. 
 
 These results reveal the global use of GESAMP publications, their relevance to specific locales, and their utility to organizations with diverse purposes not solely limited to environmental or marine protection. Nevertheless, GESAMP publications remain most cited by its sponsoring organizations, such as UNEP, the FAO, and the WMO. Adie (2023) notes that, concerning policy, governments tend to cite local sources most often. In this way, international bodies such as the UN, citing GESAMP literature, **reveal how its findings may apply to work and policy with a global focus and less to regionalized policy**. GESAMP reports are nevertheless regularly mentioned by national organizations, as evidenced by governmental and NGO documents from Australia, Canada, New Zealand, and Finland, among others. 
 
 This analysis of literature citing GESAMP publications utilized references from scholarly articles in the Web of Science, policy documents from Overton, and news mentions from Factiva, Eurêka, ProQuest News and Newspapers, NexisUni, and Research Library. Most citations are in scientific articles (4,713 citations from 4,082 distinct articles), followed by news sources (708 news mentions from 329 different news sources) and policy documents (742 policy citations from 551 publications published by 103 organizations linking to 118 GESAMP publications). We observe a continuous growth in engagement with GESAMP publications over time, both in citations and mentions of GESAMP literature in news media. 
 
-This study’s approach possesses several limitations. A search for GESAMP publications was conducted across databases by searching for "gesamp" and its full name. Reports were not searched for at an individual level, which may have limited the comprehensiveness of the retrieved results from databases. As extensive as the coverage of our data sources may be, this report underestimates the total engagement of GESAMP literature; Overton and Web of Science do not index full coverage of GESAMP publications. Further, availability bias in Overton and policy documents online may skew our dataset. Some countries have fewer policies available online than others or use references in the same ways, potentially excluding mentions of GESAMP. Regarding news sources, databases do not typically distinguish between media, newswire, or news-feeding services. Future work will be needed to disambiguate the provenance and different layers of news services in the data.
+The impact of GESAMP on policy is
+
+GESAMP publication gets cited on average 6.2 times in policy documents indexed in Overton. Without a comparison. Without a proper benchmark, it is difficult to determine whether or not this is a low or high number of policy citations. Still, past evidence on policy citations to scholarly literature suggests much lower rates of policy citations for this type of document. For example, research articles related to sharks analyzed in @toupin2023shark paper had, on average, 0.19 policy citations according to Altmetric.com. @dorta-gonzález2024 analyzed the policy citations of 124,778 articles published in journals containing the term "policy" in their title and found and found an average of 0.6 policy citations according to Altmetric.com and an average of 2.3 policy citations according to Overton. Thus, an average of 6.2 for
+
+## **Theoretical contribution**
+
+Our finding
+
+## Methodological contribution
+
+## Practical contribution
+
+```{r message=FALSE, warning=FALSE}
+alt<-read_tsv("data/altmetrics_toupin_2023.txt")
+
+alt %>% 
+  select(record_id, policy) %>% 
+  filter(!is.na(record_id)) %>% 
+  reframe(mean_policy = mean(policy))
+
+art<-read_tsv("data/articles.txt")
+
+read_tsv("data/citations.txt") %>% 
+  filter(cited_ut %in% art$ut) %>% 
+  group_by(cited_ut) %>% 
+  reframe(n_cit = n()) %>% 
+  ungroup() %>% 
+  reframe(avg_cit = mean(n_cit))
+
+
+mpb<-openalexR::oa_fetch(entity = "works", source.id = "")
+  
+
+
+```
+
+Some practical implication of our study is that it may
+
+## Limitation
+
+This study’s approach possesses several limitations. A search for GESAMP publications was conducted across databases by searching for "gesamp" and its full name. Reports were not searched for at an individual level, which may have limited the comprehensiveness of the retrieved results from databases. As extensive as the coverage of our data sources may be this report underestimates the total engagement of GESAMP literature.
+
+Further, availability bias in Overton and policy documents online may skew our dataset. Some countries have fewer policies available online than others or use references in the same ways, potentially excluding mentions of GESAMP.
+
+Regarding news sources, databases do not typically distinguish between media, newswire, or news-feeding services.
+
+## Concluding remarks
 
 # Data Statement
 
