@@ -23,3 +23,12 @@ read_tsv("data/citations.txt") %>%
   ungroup() %>% 
   reframe(avg_cit = mean(n_cit))
 
+
+# Convert images from PFG to JPG
+library(magick)
+image_write(image_read_pdf("images/Figure_1_GESAMP.pdf", density = 300), path = "images/Fig1.jpg", format = "jpg", quality = 300)
+image_write(image_read_pdf("images/Figure_2_GESAMP.pdf", density = 300), path = "images/Fig2.jpg", format = "jpg", quality = 300)
+image_write(image_read_pdf("images/Figure_3_GESAMP.pdf", density = 300), path = "images/Fig3.jpg", format = "jpg", quality = 300)
+image_write(image_read_pdf("images/Figure_4_GESAMP.pdf", density = 300), path = "images/Fig4.jpg", format = "jpg", quality = 300)
+image_write(image_read_pdf("images/Figure_5_GESAMP.pdf", density = 300), path = "images/Fig5.jpg", format = "jpg", quality = 300)
+image_write(image_read_pdf("images/Figure_6_GESAMP.pdf", density = 300), path = "images/Fig6.jpg", format = "jpg", quality = 300)
