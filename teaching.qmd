@@ -1,19 +1,13 @@
-## Courses
+## Course Websites
 
-If you are looking for my course websites, here they are:
+-   [Bibliometrics and Scholarly Communication](https://pmongeon.github.io/bibliometrics-and-scholarly-communication/)
 
--   **Bibliometrics and Scholarly Communication** (<https://pmongeon.github.io/bibliometrics-and-scholarly-communication/>)
+-   [Data Management](https://pmongeon.github.io/info6540/)
 
--   **Data Management** (<https://pmongeon.github.io/info6540/>)
+-   [Information in Society](https://pmongeon.github.io/information-in-society/)
 
--   **Information in Society** (<https://pmongeon.github.io/information-in-society/>)
+-   [Introduction to Data Science](https://pmongeon.github.io/info6270/)
 
--   **Introduction to Data Science** (<https://pmongeon.github.io/info6270/>)
+-   [Research methods](https://pmongeon.github.io/info5520/)
 
--   **Research methods** (<https://pmongeon.github.io/info5520/>)
-
--   **Working with Data** (<https://pmongeon.github.io/mgmt2605/>)
-
-## Other stuff
-
--   [Structuring and formatting documents, tables and figures](https://pmongeon.github.io/structuring-and-formatting-documents/#/title-slide)
+-   [Working with Data](https://pmongeon.github.io/mgmt2605/)

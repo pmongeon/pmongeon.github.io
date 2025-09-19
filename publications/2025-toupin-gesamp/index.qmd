@@ -1,7 +1,7 @@
 ---
 title: "Measuring Engagement with Marine Environmental Science Grey Literature: A Case Study of GESAMP"
-subtitle: (Article)
-date: 2025-07-03
+subtitle: (Working paper)
+date: 2025-09-02
 author: 
   - Rémi Toupin
   - Madelaine Hare
@@ -70,6 +70,12 @@ editor_options:
   
 draft: false
 ---
+
+::: callout-note
+**This work is currently under review. Please cite as:**
+
+Toupin, R., Hare, M., Dalton, K., Krause, G., Moroz, V., & Mongeon, P. (2025). *Measuring engagement with marine environmental science grey literature: A case study of GESAMP* \[White paper\]. <https://qsslab.ca/2025-toupin-gesamp/>
+:::
 
 # Abstract
 
@@ -212,9 +218,9 @@ read_xlsx("data/tables.xlsx", sheet = "Table4") %>%
 
 ![Number of policy citations to GESAMP publications](images/Fig3.jpg){#fig-3 fig-align="center" width="900"}
 
-@fig-4 shows the top 15 policy sources citing GESAMP literature in their indexed production. The United Nations Environment Programme and the Food and Agriculture Organization of the United Nations are the top two citers of GESAMP literature. Data collected from Overton reveals frequent self-citations of GESAMP to its own work; the top two citers corroborate the finding that the UN often draws on its own work to advance and build knowledge. Other top citers include the International Union for Conservation of Nature, the World Meteorological Organization, and UNESCO, which shows strong international confidence in GESAMP literature for their work. Other global bodies that are not solely mandated for environmental protection or have dedicated environmental units include the World Health Organization and the World Bank. Specific national or international actors include the State of South Australia (concerned mainly with protecting the Great Barrier Reef), Natural Resources Institute Finland, the German Institute for Economic Research, and the Publications Office of the European Union.
+@fig-4 shows the top 15 policy sources citing GESAMP literature. The United Nations Environment Programme and the Food and Agriculture Organization of the United Nations are the top two citers of GESAMP literature. Data collected from Overton reveals frequent self-citations of GESAMP to its own work; the top two citers corroborate the finding that the UN often draws on its own work to advance and build knowledge. Other top citers include the International Union for Conservation of Nature, the World Meteorological Organization, and UNESCO, which shows strong international confidence in GESAMP literature for their work. Other global bodies that are not solely mandated for environmental protection or have dedicated environmental units include the World Health Organization and the World Bank. Specific national or international actors include the State of South Australia (concerned mainly with protecting the Great Barrier Reef), Natural Resources Institute Finland, the German Institute for Economic Research, and the Publications Office of the European Union.
 
-![](images/Fig4.jpg){#fig-4 fig-align="center" width="900"}
+![Top 15 policy sources citing GESAMP publications](images/Fig4.jpg){#fig-4 fig-align="center" width="900"}
 
 @tbl-5 shows the top 15 report-level policy citations to GESAMP Reports and Studies. Notably, 11 of the 15 publications were produced in the 2000s, despite GESAMP reports dating back to the 1960s. This suggests that GESAMP reports have influenced policymaking in recent years, possibly due to the organization establishing itself during its first few decades, when grey literature was more challenging to access online. However, one report from the 1980s and three from the 1990s received significant engagement in policy documents. The 1980 report, "Interchange of Pollutants Between the Atmosphere and the Ocean," for example, received the third-highest amount of policy mentions. The top two most cited reports are from more recent years and are complementary documents: Parts 1 (#90) and 2 (#93) of Sources, Fate and Effects of Microplastics in the Marine Environment appear to reflect important concerns in the policy sphere in recent years.
 
