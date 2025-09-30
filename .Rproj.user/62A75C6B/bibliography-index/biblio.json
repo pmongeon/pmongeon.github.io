@@ -1,0 +1,1391 @@
+{
+    "sources": [
+        {
+            "DOI": "10.48550/arXiv.2409.01120",
+            "URL": "https://doi.org/10.48550/arXiv.2409.01120",
+            "author": [
+                {
+                    "family": "Alonso-Alvarez",
+                    "given": "P"
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "N J"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2409.01120",
+            "id": "alonso2024coverage",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Coverage and metadata availability of african publications in OpenAlex: A comparative analysis",
+            "title-short": "Coverage and metadata availability of african publications in OpenAlex",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.48550/arXiv.2404.17663",
+            "URL": "https://doi.org/10.48550/arXiv.2404.17663",
+            "author": [
+                {
+                    "family": "Alperin",
+                    "given": "J P"
+                },
+                {
+                    "family": "Portenoy",
+                    "given": "J"
+                },
+                {
+                    "family": "Demes",
+                    "given": "K"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "V"
+                },
+                {
+                    "family": "Haustein",
+                    "given": "S"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2404.17663",
+            "id": "alperin2024suitability",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "An analysis of the suitability of OpenAlex for bibliometric analyses",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s11192-017-2453-4",
+            "URL": "https://doi.org/10.1007/s11192-017-2453-4",
+            "author": [
+                {
+                    "family": "Álvarez-Bornstein",
+                    "given": "B"
+                },
+                {
+                    "family": "Morillo",
+                    "given": "F"
+                },
+                {
+                    "family": "Bordons",
+                    "given": "M"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "alvarezbornstein2017funding",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "1793-1812",
+            "title": "Funding acknowledgments in the web of science: Completeness and accuracy of collected data",
+            "title-short": "Funding acknowledgments in the web of science",
+            "type": "article-journal",
+            "volume": "112"
+        },
+        {
+            "URL": "https://barcelona-declaration.org/",
+            "author": [
+                {
+                    "family": "Declaration",
+                    "given": "Barcelona"
+                }
+            ],
+            "id": "barcelona2024declaration",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Barcelona declaration on open research information",
+            "type": ""
+        },
+        {
+            "DOI": "10.54900/d3ck1-skq19",
+            "URL": "https://doi.org/10.54900/d3ck1-skq19",
+            "author": [
+                {
+                    "family": "Barbour",
+                    "given": "G"
+                },
+                {
+                    "family": "Carter",
+                    "given": "C"
+                },
+                {
+                    "family": "Coates",
+                    "given": "J"
+                },
+                {
+                    "family": "Cobey",
+                    "given": "K D"
+                },
+                {
+                    "family": "Corker",
+                    "given": "K S"
+                },
+                {
+                    "family": "Gadd",
+                    "given": "E"
+                },
+                {
+                    "family": "Kramer",
+                    "given": "B"
+                },
+                {
+                    "family": "Lawrence",
+                    "given": "R"
+                },
+                {
+                    "family": "Méndez",
+                    "given": "E"
+                },
+                {
+                    "family": "Neylon",
+                    "given": "C"
+                },
+                {
+                    "family": "Pölönen",
+                    "given": "J"
+                },
+                {
+                    "family": "Stern",
+                    "given": "B"
+                },
+                {
+                    "family": "Waltman",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Upstream",
+            "id": "barbour2025criteria",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "title": "Criteria for bibliographic databases in a well-functioning scholarly communication and research assessment ecosystem",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Bruce",
+                    "given": "Thomas R."
+                },
+                {
+                    "family": "Hillmann",
+                    "given": "Diane I."
+                }
+            ],
+            "container-title": "Metadata in practice",
+            "editor": [
+                {
+                    "family": "Hillmann",
+                    "given": "Diane I."
+                },
+                {
+                    "family": "Westbrooks",
+                    "given": "Elaine L."
+                }
+            ],
+            "id": "bruce2004continuum",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "note": "Originally submitted version; includes incomplete footnotes",
+            "page": "238-256",
+            "publisher": "ALA Editions",
+            "publisher-place": "Chicago",
+            "title": "The continuum of metadata quality: Defining, expressing, exploiting",
+            "title-short": "The continuum of metadata quality",
+            "type": "chapter"
+        },
+        {
+            "URL": "https://enpc.hal.science/hal-04520837",
+            "author": [
+                {
+                    "family": "Bordignon",
+                    "given": "F"
+                }
+            ],
+            "id": "bordignon2024openalex",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Is OpenAlex a revolution or a challenge for bibliometrics/bibliometricians?",
+            "type": ""
+        },
+        {
+            "DOI": "10.48550/arXiv.2409.10633",
+            "URL": "https://doi.org/10.48550/arXiv.2409.10633",
+            "author": [
+                {
+                    "family": "Céspedes",
+                    "given": "L"
+                },
+                {
+                    "family": "Kozlowski",
+                    "given": "D"
+                },
+                {
+                    "family": "Pradier",
+                    "given": "C"
+                },
+                {
+                    "family": "Sainte-Marie",
+                    "given": "M H"
+                },
+                {
+                    "family": "Shokida",
+                    "given": "N S"
+                },
+                {
+                    "family": "Benz",
+                    "given": "P"
+                },
+                {
+                    "family": "Poitras",
+                    "given": "C"
+                },
+                {
+                    "family": "Ninkov",
+                    "given": "A B"
+                },
+                {
+                    "family": "Ebrahimy",
+                    "given": "S"
+                },
+                {
+                    "family": "Ayeni",
+                    "given": "P"
+                },
+                {
+                    "family": "Filali",
+                    "given": "S"
+                },
+                {
+                    "family": "Li",
+                    "given": "B"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "V"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2409.10633",
+            "id": "cespedes2024linguistic",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Evaluating the linguistic coverage of OpenAlex: An assessment of metadata accuracy and completeness",
+            "title-short": "Evaluating the linguistic coverage of OpenAlex",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://clarivate.com/academia-government/the-institute-for-scientific-information/history/",
+            "author": [
+                {
+                    "family": "Clarivate"
+                }
+            ],
+            "container-title": "The Institute for Scientific Information",
+            "id": "clarivate_history",
+            "issued": {
+                "date-parts": []
+            },
+            "title": "The history of ISI and the work of eugene garfield",
+            "type": ""
+        },
+        {
+            "DOI": "10.48550/arxiv.2401.16359",
+            "URL": "https://doi.org/10.48550/arxiv.2401.16359",
+            "author": [
+                {
+                    "family": "Culbert",
+                    "given": "J H"
+                },
+                {
+                    "family": "Hobert",
+                    "given": "A"
+                },
+                {
+                    "family": "Jahn",
+                    "given": "N"
+                },
+                {
+                    "family": "Haupka",
+                    "given": "N"
+                },
+                {
+                    "family": "Schmidt",
+                    "given": "M"
+                },
+                {
+                    "family": "Donner",
+                    "given": "P"
+                },
+                {
+                    "family": "Mayr",
+                    "given": "P"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2401.16359",
+            "id": "culbert2024reference",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Reference coverage analysis of OpenAlex compared to web of science and scopus",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1162/qss_a_00286",
+            "URL": "https://doi.org/10.1162/qss_a_00286",
+            "author": [
+                {
+                    "family": "Delgado-Quirós",
+                    "given": "L"
+                },
+                {
+                    "family": "Ortega",
+                    "given": "J L"
+                }
+            ],
+            "container-title": "Quantitative Science Studies",
+            "id": "delgado2024metadata",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "31-49",
+            "title": "Completeness degree of publication metadata in eight free-access scholarly databases",
+            "type": "article-journal",
+            "volume": "5"
+        },
+        {
+            "DOI": "10.1007/s11192-017-2483-y",
+            "URL": "https://doi.org/10.1007/s11192-017-2483-y",
+            "author": [
+                {
+                    "family": "Donner",
+                    "given": "P"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "donner2017document",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "219-236",
+            "title": "Document type assignment accuracy in the journal citation index data of web of science",
+            "type": "article-journal",
+            "volume": "113"
+        },
+        {
+            "DOI": "10.1016/j.joi.2016.07.003",
+            "URL": "https://doi.org/10.1016/j.joi.2016.07.003",
+            "author": [
+                {
+                    "family": "Franceschini",
+                    "given": "F"
+                },
+                {
+                    "family": "Maisano",
+                    "given": "D"
+                },
+                {
+                    "family": "Mastrogiacomo",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Journal of Informetrics",
+            "id": "franceschini2016errors",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "933-953",
+            "title": "Empirical analysis and classification of database errors in scopus and web of science",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "DOI": "10.1016/j.joi.2015.11.006",
+            "URL": "https://doi.org/10.1016/j.joi.2015.11.006",
+            "author": [
+                {
+                    "family": "Franceschini",
+                    "given": "F"
+                },
+                {
+                    "family": "Maisano",
+                    "given": "D"
+                },
+                {
+                    "family": "Mastrogiacomo",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Journal of Informetrics",
+            "id": "franceschini2016museum",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "174-182",
+            "title": "The museum of errors/horrors in scopus",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "DOI": "10.1002/asi.5090140304",
+            "URL": "https://doi.org/10.1002/asi.5090140304",
+            "author": [
+                {
+                    "family": "Garfield",
+                    "given": "E"
+                },
+                {
+                    "family": "Sher",
+                    "given": "I H"
+                }
+            ],
+            "container-title": "American Documentation",
+            "id": "garfield1963citation",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1963
+                    ]
+                ]
+            },
+            "page": "195-201",
+            "title": "New factors in the evaluation of scientific literature through citation indexing",
+            "type": "article-journal",
+            "volume": "14"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0308041",
+            "URL": "https://doi.org/10.1371/journal.pone.0308041",
+            "author": [
+                {
+                    "family": "Haunschild",
+                    "given": "R"
+                },
+                {
+                    "family": "Bornmann",
+                    "given": "L"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "id": "haunschild2024overlay",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "e0308041",
+            "title": "Usage of OpenAlex for creating meaningful global overlay maps of science on the individual and institutional levels",
+            "type": "article-journal",
+            "volume": "19"
+        },
+        {
+            "DOI": "10.48550/arXiv.2406.15154",
+            "URL": "https://doi.org/10.48550/arXiv.2406.15154",
+            "author": [
+                {
+                    "family": "Haupka",
+                    "given": "N"
+                },
+                {
+                    "family": "Culbert",
+                    "given": "J H"
+                },
+                {
+                    "family": "Schniedermann",
+                    "given": "A"
+                },
+                {
+                    "family": "Jahn",
+                    "given": "N"
+                },
+                {
+                    "family": "Mayr",
+                    "given": "P"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2406.15154",
+            "id": "haupka2024types",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Analysis of the publication and document types in OpenAlex, web of science, scopus, pubmed and semantic scholar",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s11192-021-03934-x",
+            "URL": "https://doi.org/10.1007/s11192-021-03934-x",
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "W"
+                },
+                {
+                    "family": "Huang",
+                    "given": "M"
+                },
+                {
+                    "family": "Wang",
+                    "given": "H"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "liu2021samejournal",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "4541-4550",
+            "title": "Same journal but different numbers of published records indexed in scopus and web of science core collection: Causes, consequences, and solutions",
+            "title-short": "Same journal but different numbers of published records indexed in scopus and web of science core collection",
+            "type": "article-journal",
+            "volume": "126"
+        },
+        {
+            "DOI": "10.1016/j.joi.2018.07.008",
+            "URL": "https://doi.org/10.1016/j.joi.2018.07.008",
+            "author": [
+                {
+                    "family": "Liu",
+                    "given": "W"
+                },
+                {
+                    "family": "Hu",
+                    "given": "G"
+                },
+                {
+                    "family": "Tang",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Journal of Informetrics",
+            "id": "liu2018missing",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "985-997",
+            "title": "Missing author address information in web of science—an explorative study",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.48550/arXiv.2411.03325",
+            "URL": "https://doi.org/10.48550/arXiv.2411.03325",
+            "author": [
+                {
+                    "family": "Maddi",
+                    "given": "A"
+                },
+                {
+                    "family": "Maisonobe",
+                    "given": "M"
+                },
+                {
+                    "family": "Boukacem-Zeghmouri",
+                    "given": "C"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2411.03325",
+            "id": "maddi2024coverage",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Geographical and disciplinary coverage of open access journals: OpenAlex, scopus and WoS",
+            "title-short": "Geographical and disciplinary coverage of open access journals",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s11192-022-04525-0",
+            "URL": "https://doi.org/10.1007/s11192-022-04525-0",
+            "author": [
+                {
+                    "family": "Maddi",
+                    "given": "A"
+                },
+                {
+                    "family": "Baudoin",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "maddi2022quality",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "6279-6292",
+            "title": "The quality of the web of science data: A longitudinal study on the completeness of authors-addresses links",
+            "title-short": "The quality of the web of science data",
+            "type": "article-journal",
+            "volume": "127"
+        },
+        {
+            "URL": "https://www.leidenmadtrics.nl/articles/towards-the-democratisation-of-open-research-information-for-scientometrics-and-science-policy-the-campinas-experience",
+            "author": [
+                {
+                    "family": "Mazoni",
+                    "given": "A"
+                },
+                {
+                    "family": "Costas",
+                    "given": "R"
+                }
+            ],
+            "id": "mazoni2024campinas",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Towards the democratisation of open research information for scientometrics and science policy: The campinas experience",
+            "title-short": "Towards the democratisation of open research information for scientometrics and science policy",
+            "type": ""
+        },
+        {
+            "DOI": "10.1016/j.joi.2016.04.011",
+            "URL": "https://doi.org/10.1016/j.joi.2016.04.011",
+            "author": [
+                {
+                    "family": "Meester",
+                    "given": "W J N"
+                },
+                {
+                    "family": "Colledge",
+                    "given": "L"
+                },
+                {
+                    "family": "Dyas",
+                    "given": "E E"
+                }
+            ],
+            "container-title": "Journal of Informetrics",
+            "id": "meester2016response",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "569-570",
+            "title": "A response to “the museum of errors/horrors in scopus” by franceschini et al",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "URL": "https://www.leidenmadtrics.nl/articles/an-update-on-the-scholars-on-twitter-dataset",
+            "author": [
+                {
+                    "family": "Mongeon",
+                    "given": "P"
+                },
+                {
+                    "family": "Bowman",
+                    "given": "T"
+                },
+                {
+                    "family": "Costas",
+                    "given": "R"
+                },
+                {
+                    "family": "Arroyo-Machado",
+                    "given": "W"
+                }
+            ],
+            "id": "mongeon2024twitter",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "An update on the scholars on twitter dataset",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Narin",
+                    "given": "F"
+                }
+            ],
+            "id": "narin1976evaluative",
+            "issued": {
+                "date-parts": [
+                    [
+                        1976
+                    ]
+                ]
+            },
+            "publisher": "Computer Horizons Washington, D. C.",
+            "title": "Evaluative bibliometrics: The use of publication and citation analysis in the evaluation of scientific activity",
+            "title-short": "Evaluative bibliometrics",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1007/s11192-024-05034-y",
+            "URL": "https://doi.org/10.1007/s11192-024-05034-y",
+            "author": [
+                {
+                    "family": "Ortega",
+                    "given": "J L"
+                },
+                {
+                    "family": "Delgado-Quirós",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "ortega2024retracted",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "3769-3785",
+            "title": "The indexation of retracted literature in seven principal scholarly databases: A coverage comparison of dimensions, OpenAlex, PubMed, scilit, scopus, the lens and web of science",
+            "title-short": "The indexation of retracted literature in seven principal scholarly databases",
+            "type": "article-journal",
+            "volume": "129"
+        },
+        {
+            "DOI": "10.48550/arxiv.2205.01833",
+            "URL": "https://doi.org/10.48550/arxiv.2205.01833",
+            "author": [
+                {
+                    "family": "Priem",
+                    "given": "J"
+                },
+                {
+                    "family": "Piwowar",
+                    "given": "H"
+                },
+                {
+                    "family": "Orr",
+                    "given": "R"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2205.01833",
+            "id": "priem2022openalex",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts",
+            "title-short": "OpenAlex",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.31274/b8136f97.ccc3dae4",
+            "URL": "https://doi.org/10.31274/b8136f97.ccc3dae4",
+            "author": [
+                {
+                    "family": "Schares",
+                    "given": "E"
+                }
+            ],
+            "container-title": "Iowa State University",
+            "id": "schares2024funder",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Comparing funder metadata in OpenAlex and dimensions",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s11192-025-05338-7",
+            "URL": "https://doi.org/10.1007/s11192-025-05338-7",
+            "author": [
+                {
+                    "family": "Scheidsteger",
+                    "given": "T"
+                },
+                {
+                    "family": "Haunschild",
+                    "given": "R"
+                },
+                {
+                    "family": "Bornmann",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "scheidsteger2025impact",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "title": "How similar are field-normalized citation impact scores obtained from OpenAlex and three popular commercial databases? An empirical comparison based on large german universities",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.3145/epi.2023.mar.09",
+            "URL": "https://doi.org/10.3145/epi.2023.mar.09",
+            "author": [
+                {
+                    "family": "Scheidsteger",
+                    "given": "T"
+                },
+                {
+                    "family": "Haunschild",
+                    "given": "R"
+                }
+            ],
+            "container-title": "Profesional de La Información",
+            "id": "scheidsteger2023metadata",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "Which of the metadata with relevance for bibliometrics are the same and which are different when switching from microsoft academic graph to OpenAlex?",
+            "type": "article-journal",
+            "volume": "32"
+        },
+        {
+            "DOI": "10.5860/crl.86.1.101",
+            "URL": "https://doi.org/10.5860/crl.86.1.101",
+            "author": [
+                {
+                    "family": "Shi",
+                    "given": "J"
+                },
+                {
+                    "family": "Nason",
+                    "given": "M"
+                },
+                {
+                    "family": "Tullney",
+                    "given": "M"
+                },
+                {
+                    "family": "Alperin",
+                    "given": "J"
+                }
+            ],
+            "container-title": "College & Research Libraries",
+            "id": "shi2025metadata",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "title": "Identifying metadata quality issues across cultures",
+            "type": "article-journal",
+            "volume": "86"
+        },
+        {
+            "DOI": "10.48550/arXiv.2404.01985",
+            "URL": "https://doi.org/10.48550/arXiv.2404.01985",
+            "author": [
+                {
+                    "family": "Simard",
+                    "given": "M-A"
+                },
+                {
+                    "family": "Basson",
+                    "given": "I"
+                },
+                {
+                    "family": "Hare",
+                    "given": "M"
+                },
+                {
+                    "family": "Lariviere",
+                    "given": "V"
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "P"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:2404.01985",
+            "id": "simard2024openaccess",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "The open access coverage of OpenAlex, scopus and web of science",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.5530/jscires.20041144",
+            "URL": "https://doi.org/10.5530/jscires.20041144",
+            "author": [
+                {
+                    "family": "Singh",
+                    "given": "P"
+                },
+                {
+                    "family": "Singh",
+                    "given": "V K"
+                },
+                {
+                    "family": "Kanaujia",
+                    "given": "A"
+                }
+            ],
+            "container-title": "Journal of Scientometric Research",
+            "id": "singh2024fields",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "715-731",
+            "title": "Exploring the publication metadata fields in web of science, scopus and dimensions: Possibilities and ease of doing scientometric analysis",
+            "title-short": "Exploring the publication metadata fields in web of science, scopus and dimensions",
+            "type": "article-journal",
+            "volume": "13"
+        },
+        {
+            "DOI": "10.3390/publications12040043",
+            "URL": "https://doi.org/10.3390/publications12040043",
+            "author": [
+                {
+                    "family": "Turgel",
+                    "given": "I D"
+                },
+                {
+                    "family": "Chernova",
+                    "given": "O A"
+                }
+            ],
+            "container-title": "Publications",
+            "id": "turgel2024alternatives",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "43",
+            "title": "Open science alternatives to scopus and the web of science: A case study in regional resilience",
+            "title-short": "Open science alternatives to scopus and the web of science",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.31222/osf.io/smxe5_v2",
+            "URL": "https://doi.org/10.31222/osf.io/smxe5_v2",
+            "author": [
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "N J"
+                },
+                {
+                    "family": "Waltman",
+                    "given": "L"
+                }
+            ],
+            "id": "eck2025crossref",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "note": "May 12",
+            "title": "Crossref as a source of open bibliographic metadata",
+            "type": ""
+        },
+        {
+            "URL": "https://www.leidenmadtrics.nl/articles/launch-of-the-cwts-leiden-ranking-open-edition-2024",
+            "author": [
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "N J"
+                },
+                {
+                    "family": "Waltman",
+                    "given": "L"
+                },
+                {
+                    "family": "Neijssel",
+                    "given": "M"
+                }
+            ],
+            "id": "eck2024ranking",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "note": "October 9",
+            "title": "Launch of the CWTS leiden ranking open edition 2024",
+            "type": ""
+        },
+        {
+            "DOI": "10.1162/qss_a_00112",
+            "URL": "https://doi.org/10.1162/qss_a_00112",
+            "author": [
+                {
+                    "family": "Visser",
+                    "given": "M"
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "N J"
+                },
+                {
+                    "family": "Waltman",
+                    "given": "L"
+                }
+            ],
+            "container-title": "Quantitative Science Studies",
+            "id": "visser2021comparison",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "20-41",
+            "title": "Large-scale comparison of bibliographic data sources: Scopus, web of science, dimensions, crossref, and microsoft academic",
+            "title-short": "Large-scale comparison of bibliographic data sources",
+            "type": "article-journal",
+            "volume": "2"
+        },
+        {
+            "DOI": "10.1007/s11192-023-04923-y",
+            "URL": "https://doi.org/10.1007/s11192-023-04923-y",
+            "author": [
+                {
+                    "family": "Zhang",
+                    "given": "L"
+                },
+                {
+                    "family": "Cao",
+                    "given": "Z"
+                },
+                {
+                    "family": "Shang",
+                    "given": "Y"
+                },
+                {
+                    "family": "Sivertsen",
+                    "given": "G"
+                },
+                {
+                    "family": "Huang",
+                    "given": "Y"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "zhang2024institutions",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Missing institutions in OpenAlex: Possible reasons, implications, and solutions",
+            "title-short": "Missing institutions in OpenAlex",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1162/QSS.a.1",
+            "URL": "https://doi.org/10.1162/QSS.a.1",
+            "author": [
+                {
+                    "family": "Simard",
+                    "given": "Marc-André"
+                },
+                {
+                    "family": "Basson",
+                    "given": "Isabel"
+                },
+                {
+                    "family": "Hare",
+                    "given": "Madelaine"
+                },
+                {
+                    "family": "Larivière",
+                    "given": "Vincent"
+                },
+                {
+                    "family": "Mongeon",
+                    "given": "Philippe"
+                }
+            ],
+            "container-title": "Quantitative Science Studies",
+            "id": "simard2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        5,
+                        7
+                    ]
+                ]
+            },
+            "page": "1-29",
+            "title": "Examining the geographic and linguistic coverage of gold and diamond open access journals in OpenAlex, scopus and web of science",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "literal": "Wikipedia contributors"
+                }
+            ],
+            "id": "segal_law_wikipedia",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "note": "Last edited on April 18, 2024",
+            "publisher": "https://en.wikipedia.org/wiki/Segal%27s_law; Wikipedia, The Free Encyclopedia",
+            "title": "Segal’s law",
+            "type": ""
+        },
+        {
+            "URL": "https://www.leidenmadtrics.nl/articles/towards-the-democratisation-of-open-research-information-for-scientometrics-and-science-policy-the-campinas-experience",
+            "author": [
+                {
+                    "family": "Mazoni",
+                    "given": "Alysson"
+                },
+                {
+                    "family": "Costas",
+                    "given": "Rodrigo"
+                }
+            ],
+            "id": "mazoni2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        6,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Towards the democratisation of open research information for scientometrics and science policy: the Campinas experience",
+            "title-short": "Towards the democratisation of open research information for scientometrics and science policy",
+            "type": ""
+        },
+        {
+            "URL": "https://www.leidenmadtrics.nl/articles/opening-up-the-cwts-leiden-ranking-toward-a-decentralized-and-open-model-for-data-curation",
+            "author": [
+                {
+                    "dropping-particle": "van",
+                    "family": "Eck",
+                    "given": "Nees Jan"
+                },
+                {
+                    "family": "Visser",
+                    "given": "Martijn"
+                },
+                {
+                    "family": "Waltman",
+                    "given": "Ludo"
+                }
+            ],
+            "id": "vaneck2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        1,
+                        30
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Opening up the CWTS Leiden Ranking: Toward a decentralized and open model for data curation",
+            "title-short": "Opening up the CWTS Leiden Ranking",
+            "type": ""
+        },
+        {
+            "DOI": "10.48550/arXiv.1505.00796",
+            "author": [
+                {
+                    "family": "Haustein",
+                    "given": "Stefanie"
+                },
+                {
+                    "family": "Bowman",
+                    "given": "Timothy D."
+                },
+                {
+                    "family": "Costas",
+                    "given": "Rodrigo"
+                }
+            ],
+            "container-title": "arXiv preprint arXiv:1505.00796",
+            "id": "haustein",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "When is an article actually published? An analysis of online availability, publication, and indexation dates",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1007/s11192-014-1503-4",
+            "URL": "http://link.springer.com/10.1007/s11192-014-1503-4",
+            "author": [
+                {
+                    "family": "Franceschini",
+                    "given": "Fiorenzo"
+                },
+                {
+                    "family": "Maisano",
+                    "given": "Domenico"
+                },
+                {
+                    "family": "Mastrogiacomo",
+                    "given": "Luca"
+                }
+            ],
+            "container-title": "Scientometrics",
+            "id": "franceschini2015",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        3
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "2181-2186",
+            "title": "Errors in DOI indexing by bibliometric databases",
+            "type": "article-journal",
+            "volume": "102"
+        }
+    ],
+    "project_biblios": []
+}

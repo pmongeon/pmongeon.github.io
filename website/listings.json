@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/slides.html",
+    "items": []
+  },
+  {
+    "listing": "/notebooks.html",
+    "items": [
+      "/notebooks/frankenmetrics/index.html"
+    ]
+  },
+  {
+    "listing": "/pubs.html",
+    "items": []
+  }
+]

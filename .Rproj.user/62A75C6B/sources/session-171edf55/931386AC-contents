@@ -1,0 +1,25 @@
+---
+title: "Frankenmetric"
+date: 2025-09-30
+categories: 
+  - OpenAlex
+  - ggplot
+bibliography: files/references.bib
+csl: files/apa.csl
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+## Put your content here
