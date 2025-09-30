@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: website
+
+website:
+  title: "Playground"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: notebooks.qmd
+        text: Notebooks
+      - href: pubs.qmd
+        text: Publications
+      - href: slides.qmd
+        text: Slides
+format:
+  html:
+    toc: true
+    code-link: false
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+    css: styles.css
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+editor: visual
+

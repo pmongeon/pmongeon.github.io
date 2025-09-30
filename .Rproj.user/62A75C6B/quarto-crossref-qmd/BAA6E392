@@ -1,0 +1,25 @@
+{
+    "entries": [
+        {
+            "file": "index.qmd",
+            "type": "tbl",
+            "id": "4 ",
+            "suffix": "",
+            "title": "Publication-level citations to GESAMP reports."
+        },
+        {
+            "file": "index.qmd",
+            "type": "tbl",
+            "id": "6 ",
+            "suffix": "",
+            "title": "Publication-level news indicators to GESAMP reports."
+        },
+        {
+            "file": "index.qmd",
+            "type": "tbl",
+            "id": "2 ",
+            "suffix": "",
+            "title": "Number of GESAMP publications by period and by type."
+        }
+    ]
+}

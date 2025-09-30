@@ -1,0 +1,13 @@
+{
+  "listingMap": {
+    "notebooks.qmd": [
+      "notebooks"
+    ],
+    "pubs.qmd": [
+      "publications"
+    ],
+    "slides.qmd": [
+      "slides"
+    ]
+  }
+}

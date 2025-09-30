@@ -1,0 +1,78 @@
+---
+title: "Identifying Ocean‐Related Literature Using the UN Second World Ocean Assessment Report"
+subtitle: (Article)
+date: 2025-01-21
+author:
+  - Rémi Toupin
+  - Geoff Krause
+  - Poppy Riddle
+  - Madelaine Hare
+  - Philippe Mongeon
+authors:
+  - name: Rémi Toupin
+    orcid: 0000-0001-6765-0380
+    corresponding: true
+    email: remi.toupin@umontreal.ca
+    affiliations: 
+      - ref: dal
+  - name: Geoff Krause
+    orcid: 0000-0001-7943-5119
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Poppy Riddle
+    orcid: 0000-0001-7862-7848
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Madelaine Hare
+    orcid: 0000-0002-2123-9518
+    corresponding: false
+    affiliations: 
+      - ref: uottawa
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: uottawa
+    name: University of Ottawa
+    address: Ottawa, Ontario, Canada
+
+categories: 
+  - Knowledge Mobilization
+  - Oceans
+  - Science‐Policy Interface
+  
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.17645/oas.8924
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Citation
+
+Toupin, R., Krause, G., Riddle, P., Hare, M., & Mongeon, P. (2025). Identifying Ocean‐Related Literature Using the UN Second World Ocean Assessment Report. *Ocean and Society*, 2, Article 8924. <https://doi.org/10.17645/oas.8924>
+
+# Abstract
+
+In recent years, ocean governance has called for strategic action and science‐informed policy to work towards the sustainable development of the ocean, most notably as part of the UN Decade of Ocean Science for Sustainable Development (2021–2030). This common framework identifies the integration of scientific knowledge in governance as a key process to deliver solutions responding to the current challenges, opportunities, and transformations posed by global change in the oceans. This article presents a methodological approach for identifying ocean‐related research outputs and documenting research‐based knowledge integration in documents that inform ocean governance. Specifically, this study builds on an analysis of the references included in the UN Second World Ocean Assessment report to (a) identify and describe the research outputs cited in the distinct chapters of the report, (b) identify research outputs relevant to ocean governance through the analysis of citations from and to references included in the UN Second World Ocean Assessment, (c) compare both datasets to examine the position of the literature cited in the report within a broader ecosystem of ocean‐related research, and (d) present a method to identify topically relevant research that could be integrated in future ocean assessments. Our findings show distinct referencing practices across chapters and expert groups and a higher reliance on high‐profile sources in the report compared to a broader dataset of ocean research outputs. Moreover, this study highlights an innovative approach to identifying ocean research based on knowledge syntheses and considers discussion points about integrating research‐based knowledge in documents informing ocean governance.
+
+# Key figures
+
+![Figure 3. Results of the manual sampling of articles of all 24 possible combinations of criteria for ocean relation matching the documents in the full dataset. Notes: CdCaKwJo means that these papers were cited by the core dataset, had a Ca with papers from the core dataset, including at least one relevant keywords from the list established for this study, and were published in a journal related to oceans; each bar represents the % of papers (out of 100 for each category) that were coded based on the relation of the paper to oceans; the numbers on the right indicate the number of papers fitting a given combination as well as the performance score of the combination to capture relevant ocean research outputs.](images/clipboard-562810393.png){fig-align="center"}
