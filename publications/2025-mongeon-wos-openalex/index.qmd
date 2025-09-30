@@ -1,0 +1,642 @@
+---
+title: "Investigating Document Type, Language, and Publication Year and Author Count Discrepancies Between OpenAlex and the Web of Science"
+subtitle: (Working Paper)
+date: 2025-08-24
+author:
+  - Philippe Mongeon
+  - Madelaine Hare
+  - Poppy Riddle
+  - Summer Wilson
+  - Geoff Krause
+  - Rebecca Marjoram
+  - Rémi Toupin
+authors:
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    email: PMongeon@dal.ca
+    roles: writing, conceptualization
+    corresponding: true
+    affiliations:
+      - ref: dal
+  - name: Madelaine Hare
+    orcid: 0000-0002-2123-9518
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Poppy Riddle
+    orcid: 0000-0001-7862-7848
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Summer Wilson
+    orcid: 0009-0001-6756-6661
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Geoff Krause
+    orcid: 0000-0001-7943-5119
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Rebecca Marjoram
+    orcid: 0000-0001-7438-6258
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Remi Toupin
+    orcid: 0000-0001-6765-0380
+    corresponding: false
+    affiliations:
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+categories: 
+  - Databases
+  - Metadata
+bibliography: files/references.bib
+csl: files/apa.csl
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+::: callout-note
+**This work is currently under review. Please cite this working paper as:**
+
+Mongeon, P., Hare, M., Riddle, P., Wilson, S., Krause, G., Marjoram, R., & Toupin, R. (2025). Investigating Document Type, Language, and Publication Year and Author Count Discrepancies Between OpenAlex and the Web of Science \[Working paper\]. Quantitative Science Studies Lab. <https://qsslab.github.io/wos-openalex/index.html>
+:::
+
+# Abstract
+
+Bibliometrics, whether used for research or research evaluation, relies on large multidisciplinary databases of research outputs and citation indices. The Web of Science (WoS) was the main supporting infrastructure of the field for more than 30 years until several new competitors emerged. OpenAlex, a bibliographic database launched in 2022, has distinguished itself for its openness and extensive coverage. While OpenAlex may reduce or eliminate barriers to accessing bibliometric data, one of the concerns that hinders its broader adoption for research and research evaluation is the quality of its metadata. This study aims to assess metadata quality in OpenAlex and WoS, focusing on document type, publication year, language, and number of authors. By addressing discrepancies and misattributions in metadata, this research seeks to enhance awareness of data quality issues that could impact bibliometric research and evaluation outcomes.
+
+# Introduction
+
+Bibliometrics has been used in research and data-driven research evaluation for approximately half a century [@narin1976evaluative], originally supported by the development of the Web of Science[^1] (WoS), which was conceptualized in 1955 and launched in 1964 [@clarivate_history]. It took more than 30 years for other players to emerge: Elsevier’s Scopus[^2] was founded in 1996, Crossref[^3] in 1999, Google Scholar[^4] in 2004, Microsoft Academic (now integrated into OpenAlex) and Dimensions[^5] in 2018, and OpenAlex in 2022[^6].
+
+[^1]: <https://www.webofscience.com/wos/>
+
+[^2]: <https://www.scopus.com/>
+
+[^3]: <https://www.crossref.org/>
+
+[^4]: <https://scholar.google.com/>
+
+[^5]: <https://www.dimensions.ai/>
+
+[^6]: <https://openalex.org/>.
+
+The value of bibliographic data sources is derived from different elements, including their coverage, completeness, and data accuracy [@visser2021comparison]and may be contingent on the intended use. Major proprietary databases like Scopus and WoS are widely regarded as high-quality sources [@singh2024fields], but they are certainly not free of errors. Past studies have identified issues such as DOI duplication (“identity cloning”) and inaccurate indexing of citations [@franceschini2016museum; @franceschini2016errors; @franceschini2015]. @alvarezbornstein2017funding found 12% of sampled WoS records lost funding data and showed inconsistencies across subfields. @maddi2022quality reported 8% of papers from 2008–2012 had incomplete author-affiliation links, improving to under 1.5% after database updates. @liu2018missing noted over 20% of missing author addresses in WoS, varying by document type and year. @liu2021samejournal outlined four causes of discrepancies between Scopus and WoS: differing publication date policies, document omissions, duplicate entries, and metadata errors. @donner2017document, for example, found document type discrepancies between WoS and journal websites or article full text for a sample of 791 publications, with letters and reviews particularly affected.
+
+The advent of OpenAlex, an open database that indexes over 250 million scholarly works with broader coverage of the Humanities, non-English languages, and the Global South than traditional indexes [@priem2022openalex] generated a new wave of studies aimed at better understanding this new source and assessing its suitability for bibliometric analyses and research evaluation. Many of these studies compared the coverage of OpenAlex to that of more established databases. @culbert2024reference investigated the coverage of reference items between OpenAlex, WoS, and Scopus. They found that OpenAlex was comparable with commercial databases from an internal reference coverage perspective if restricted to a core corpus of publications similar to the other two sources, though it lacked cited references. @alonso2024coverage also found missing references. OpenAlex was found to lack funding metadata [@schares2024funder] and institutional affiliations [@bordignon2024openalex; @zhang2024institutions], but to have higher author counts compared to WoS and Scopus [@alonso2024coverage]. @haupka2024types observed that a broader range of materials were classified as articles in OpenAlex compared to Scopus, WoS, and PubMed, potentially explained by the OpenAlex's reliance on Crossref’s less granular system of classification [@ortega2024retracted]. At the journal level, @simard2025 and @maddi2024coverage found that OpenAlex provides a higher and more geographically balanced coverage of open access journals compared to WoS and Scopus. @cespedes2024linguistic also found that OpenAlex had a broader linguistic coverage (75% English) than WoS (95% English). They also identified discrepancies in OpenAlex’s language metadata, noting that approximately 7% of articles were incorrectly classified as English, mainly due to the algorithmic detection of language from the title and abstract metadata in OpenAlex.
+
+OpenAlex's openness and broad coverage of the scholarly record have likely contributed to its fast adoption as a data source for scientometric research. There is evidence that it is indeed suitable in certain cases, such as large-scale, country-level analyses [@alperin2024suitability]. However, there is some warranted resistance to its adoption for formal research evaluation purposes given its known imperfections such as partial correctness or erroneous metadata [@haunschild2024overlay]. The Centre for Science and Technology Studies (CWTS) was, to our knowledge, the first to make such a use of OpenAlex. Since 2023, they have been using it to produce the open edition[^7] of their now well-established CWTS Leiden Ranking.
+
+[^7]: <https://open.leidenranking.com/>
+
+The CWTS Leiden Ranking Open Edition employed several strategies to mitigate the limitations of the OpenAlex database and the risks associated with its use. It was limited to approximately 9.3 million articles and reviews in English, published in a set of core, international journals and citing or cited in other core journals [see @vaneck2024 and the ranking website for more details]. The objective was to reproduce the WoS-based Leiden Ranking as closely as possible. As such, the open ranking does not take much advantage of the more extensive coverage of OpenAlex. In their blog post, @vaneck2024 provide some insights on the publications included in the two versions of the ranking. They indicate that 2.5 million publications are included only in the Open Edition, in most cases (1.7 million publications) because they are not covered in WoS. On the other hand, 0.7 million publications are only included in the WoS-based ranking, explained by publication year discrepancies between the two databases, leading to some articles being included in one ranking but not the other, and by the missing institutional affiliations in OpenAlex records [@vaneck2024]. The challenges of determining the publication year of an article were also previously discussed by @haustein.
+
+Because of the large overlap in the data used to produce the two rankings, they produced similar outcomes, with the usual suspects appearing at the top of the ranking. Yet, there were some differences with some universities moving up or down by a few ranks. For example, Dalhousie University ranked #15 for Canadian universities in the WoS version of the ranking, and #13 in the OpenAlex version. Being presented with two different rankings that used the same process but provide different outcomes due to their data sources may lead to the dilemma of Segal's law, according to which “A man with a watch knows what time it is. A man with two watches is never sure” [@segal_law_wikipedia].
+
+## Research objectives
+
+Our study was partly inspired by the launch of the CWTS Leiden Ranking Open Edition and its differences with the WoS-based edition. However, our intent is not to compare the two rankings and explain the differences in their outcome, but to compare metadata records for the subset of publications that are indexed in both OpenAlex and WoS, with a focus on describing discrepancies and measuring their frequency. We do not consider WoS as a gold standard against which OpenAlex records can be tested for their quality. Instead, we consider each database as a benchmark for the other.Our research questions are as follows:
+
+-   **RQ1**: How frequent are discrepancies between WoS and OpenAlex records in terms of document type, language, publication year, and number of authors?
+-   **RQ2**: What share of records with discrepancies are correct in WoS, OpenAlex, neither, or both?
+-   **RQ3**: What explains these discrepancies?
+
+The choice of the metadata elements selected for the study (document type, language, publication year, and number of authors) was guided by their use as factors for inclusion in the CWTS Leiden Ranking: articles and reviews (document type) in English (language) published in a three-year period (publication year). The same metadata are also relevant in the production of normalized indicators for bibliometric research more generally. Indeed, normalized indicators would typically aim to compare publications of the same type, published in the same year. Additionally, the number of authors tends to be the denominator when counting publications using the fractional counting method (also provided in the Leiden Ranking). Therefore, discrepancies in these metadata elements of publication records are more likely to have a direct effect on the outcome of bibliometric analysis.
+
+To our knowledge, our study is the first to compare the metadata quality of the subset of publications indexed in both OpenAlex and WoS. Our findings may offer useful insights to those using or planning to use OpenAlex, and may also point to possible paths to correct matadata errors, which could be helpful for database providers. Our intent is not to establish best practices or to formulate recommendations for database creators or users, nor to determine which database is better than the other. Our study is solely motivated by the desire to contribute to a better understanding of our data sources.
+
+# Data and methods
+
+## Data collection
+
+The WoS data used in this study were retrieved from a relational database version of the WoS hosted by the Observatoire des sciences et des technologies (OST) and limited to the Science Citation Index (SCI), the Social Sciences Citation Index (SSCI), and the Arts & Humanities Citation Index (A&HCI). We collected all WoS records with a DOI published between 2021 and 2023 (N = 7,661,474). We removed 30,3094 (0.4%) WoS records with multiple document types to avoid complications with the analysis. Of the remaining 7,631,080 WoS records, 6,599,479 (86.5%) had a DOI match in the February 2024 snapshot of OpenAlex accessed through Google Big Query [see @mazoni2024]. Conversely, we collected all OpenAlex records with a DOI and a publication year between 2021 and 2023 (N = 26,942,411), and found 13,618 additional matches to WoS records published outside of the 2021-2023 period, for a total of 6,613,097 records matched. We used the subset of 6,608,243 Web of Science records with a single DOI match in OpenAlex for our analysis. In the OST database, every journal is assigned to one of 143 specialties and 14 disciplines of the National Science Foundation (NSF) classification. For our analysis, we grouped the disciplines into four groups: Arts and Humanities (AH), Biomedical Research (BM), Natural Science and Engineering (NSE), and Social Sciences (SS).
+
+## Identification of discrepancies
+
+For each matching WoS and OpenAlex record, we compared the following four metadata elements: 1) document type, 2) language, 3) publication year, and 4) number of authors.
+
+For the document type, we did not consider discrepancies where a record is a review according to WoS and an article according to OpenAlex, and vice versa (i.e., we consider articles and reviews as the same document type). Furthermore, OpenAlex indexes conference papers as articles, and the source type (conference) is meant to distinguish them from journal articles. For these reasons, we only considered discrepancies for which the record is identified as an article or a review in either WoS or OpenAlex, but is identified as neither in the other source. We also excluded discrepancies for which the record is a meeting abstract in WoS and an article in OpenAlex. Overall, we found 429,692 discrepancies that met these criteria (6.5% of all records in the dataset).
+
+The identification of discrepancies in language, publication year, and number of authors was limited to the subset of 5,936,235 articles and reviews with no discrepancy in document type (i.e., the records that are articles or reviews in both WoS and OpenAlex). The publication language is recorded in its long form (e.g., English) in our WoS data and its ISO code (e.g., en) in OpenAlex, so we created a list of all language combinations (e.g., English-EN, English-FR), determined which ones constitute discrepancies, and identified 33,516 discrepancies (0.6% of all articles and reviews) in publication language between WoS and OpenAlex.
+
+The publication year and number of authors being numeric indicators, identifying discrepancies in these metadata fields is easily done by calculating the difference between the two values and flagging all non-zero values. We identified a total of 480,884 discrepancies (8.1% of all articles and reviews) in publication years and 71,133 discrepancies (1.2% of all articles and reviews) in the number of authors. We recorded them both as dichotomous variables (discrepancy vs no discrepancy) and as differences between the two values, which allowed us to measure both the frequency and the strength of the discrepancies.
+
+We obtain the direction and extent of the discrepancies by substracting the OpenAlex publication year or number of author from the WoS values. A difference of 1 indicates that according to WoS the article was published one year (or has one more author) later than according to OpenAlex. Inversely, a difference of -1 indicates that the articles was published one year ealier (or has one fewer author) according to WoS than according to OpenAlex. We then and grouped cases in the bins (-4 or less, -2 to -3, -1, 1, 2 to 3, 4 or more).
+
+## Investigation of discrepancies
+
+We randomly sampled a sample of discrepancies for manual investigation. For each type of discrepancies, we calculated the required sample size with a 95% confidence level and a margin of error of ±5%. The sample discrepancies were manually investigated by looking at the article on the journal’s website and the full text when necessary and available. We recorded whether the WoS or OpenAlex record was correct and, when possible, explained the discrepancy. For the publication year, it is typical for articles to have two publication dates: the date of the first online publication and the date of the publication of the issue. For cases in which the online publication year was recorded in one database and the issue year was recorded in the other, we did not consider either database to be correct.
+
+For author discrepancies, the landing page and, when available, the published version was examined for author counts. Where available, author declarations, acknowledgements, and CRediT declarations were also considered to clarify authorship where groups or consortia were involved in the production of the work. For languages, the full text was the primary source, followed by the publisher's landing page for recording observations on language assignment. We recorded multiple language full texts if available, as well as translated abstracts available on the landing page. There are limitations to using the publisher landing page with a web browser.  The language encoding in the head of the HTML could be used by the GET request to display your preferred language type, if the server is configured to respond to such a request.
+
+This process allowed us to go beyond the simple counting of differences between the databases and gain insight into the different factors that can cause discrepancies and estimate the percentage of erroneous records in each database. One caveat, of course, is that because our process relies on discrepancies in identifying errors, we are not considering cases where both databases contain the same error.
+
+# Results
+
+```{r eval = TRUE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(flextable)
+library(officer)
+library(psych)
+library(viridis)
+library(hrbrthemes)
+library(ggsci)
+```
+
+We structured our results section by type of discrepancy. For each, we first show the distribution of values in the Web of Science and the OpenAlex datasets. Note that these are not the distributions in the entire Web of Science OpenAlex databases, but the distributions in the subset of records with a DOI match between the databases that are included in our analysis. Second, we present descriptive statistics related to the discrepancies identified and the sample that was used for investigations. Finally, we present the results of these investigations.
+
+## Document type
+
+### Document type distribution in WoS and OpenAlex
+
+Table @tbl-1 and @tbl-2 present the distribution of records across document types in WoS and OpenAlex, respectively, to provide a general picture of the databases’ content and the differences in their classification. While WoS contains twice as many document types as OpenAlex, these differences appear mainly among the less frequent types, in line with the findings of @haupka2024types. Most documents in both data sources are articles and reviews.
+
+```{r echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+#| label: tbl-1 
+#| tbl-cap: "Distribution of records by document type in WoS"
+
+table1 <- readxl::read_xlsx("data/table1.xlsx") %>% 
+  rename(`WoS Document Type` = wos_type,
+         Records_n = n,
+         Records_pct = pct)
+  
+ft <- table1 %>%
+  flextable() %>%
+  set_table_properties(width = 1, layout = "autofit") %>%
+  border(i = nrow(table1), border.top = fp_border(width = 1)) %>%
+  padding(i = NULL, j = NULL,
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>%
+  separate_header() %>% 
+  align(j = 2:3, align = "right", part = "all") %>%
+  bold(part = "header") %>%
+  compose(j = 1, i = 11, value = as_paragraph("Other", as_sup("*"))) %>% 
+  add_footer_lines(values = as_paragraph(as_sup("*"),"Includes cc meeting heading, poetry, expression of concern, reprint, art exhibit review, item withdrawal, film review, bibliography, fiction, creative prose, theater review, record review, music performance review, software review, music score review, hardware review, tv review, radio review, dance performance review, excerpt, database review, data paper, note, and script. It should be noted that TV Review, Radio Review, Video Review were retired as document types and are no longer added to items indexed in the WoS Core Collection. They are still usable for searching or refining/analyzing search results."))
+
+ft
+```
+
+```{r eval = TRUE}
+#| label: tbl-2 
+#| tbl-cap: "Distribution of records by document type in OpenAlex"
+table2<- readxl::read_xlsx("data/table2.xlsx") %>% 
+  rename(`OpenAlex Document Type` = oa_type,
+         Records_n = n,
+         Records_pct = pct)
+
+ft<-table2 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   border(i = nrow(table2) , border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:3, align = "right", part = "all")  %>% 
+  bold(part="header") %>% 
+  compose(j = 1, i = 11, value = as_paragraph("Other", as_sup("*"))) %>% 
+  add_footer_lines(values = as_paragraph(as_sup("*"),"Includes report, dataset, other, dissertation, supplementary-materials, and reference-entry.")) 
+
+ft
+```
+
+@tbl-3 and @tbl-4 show that the vast majority 301,850 of the 310,843 discrepancies (97%) are cases where a record is an article or review in OpenAlex but not WoS. We find that in both tables the majority of discrepancies indicate a misclassification of a record as an article or review. However, WoS is much more accurate at detecting misclassifications in OpenAlex (93.5% of the sample) than in WoS (68.8% of the sample). This generally points to a much larger number of OpenAlex records misclassified as articles or review compared to WoS.
+
+```{r echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+#| label: tbl-3 
+#| tbl-cap: "Discrepancies for documents categorized as articles or reviews in the WoS but not in OpenAlex"
+table3<- readxl::read_xlsx("data/table3.xlsx")
+
+table3 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table3), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:6, align = "right", part = "all") %>% 
+  width(j = 1, width = 1.5) %>% 
+  bold(part = "header")
+```
+
+```{r echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
+#| label: tbl-4 
+#| tbl-cap: "Discrepancies for documents categorized as articles or reviews in OpenAlex but not in WoS"
+
+table4<-readxl::read_xlsx("data/table4.xlsx") 
+table4 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table4), border.top = fp_border(width = 1)) %>% 
+#  set_caption("Table 4. Discrepancies for documents categorized as articles or reviews in OpenAlex but not in WoS", align_with_table = FALSE) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:7, align = "right", part = "all") %>% 
+  width(j = 1, width = 1.5) %>% 
+  bold(part = "header")
+
+```
+
+## Publication Language
+
+### Language Distribution in WoS and OpenAlex
+
+@tbl-5 and @tbl-6 show the distribution of articles and reviews across languages in WoS and OpenAlex, respectively, limited to the top 10 most frequent languages. Unsurprisingly, the quasi totality of records are in English in both databases. It is important to note, once again, that our results are note meant to reflect the compositon of the entire databases, but only the subset of documents included in both, which expectedly underestimate the representation of non-English literature especially on the OpenAlex side. Also important to reiterate here is that we our WoS data includes only the SCI-E, SSCI, and A&HCI, and not the ESCI which would include more non-English records.
+
+```{r eval=TRUE}
+#| label: tbl-5 
+#| tbl-cap: "Distribution of records by language in WoS"
+
+table5<-readxl::read_xlsx("data/table5.xlsx") %>% 
+  slice(c(1:5,7:11,6,12))
+
+table5 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table5), 
+         border.top = fp_border(width = 1)) %>%
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:3, align = "right", part = "all") %>% 
+  width(j = 1, width = 1.5)  %>% 
+#  set_caption("Table 5. Distribution of records by language in WoS", align_with_table = FALSE) %>% 
+  bold(part="header")
+  
+```
+
+Aside from the dominance of English in the dataset, we also observe differences in the languages that compose the top 10 in each database, as well as in their ranking. Spanish, French, and Portugese are much more prevalent in the OpenAlex records than in the WoS. On the other hand, Chinese is the 5th most prevalent language in the WoS data, but does not make the top 10 in OpenAlex. Since these are supposed to be the same set of records, these differences point to significant discrepancies in the language between the two databases.
+
+```{r eval = TRUE}
+#| label: tbl-6 
+#| tbl-cap: "Distribution of records by language in OpenAlex"
+
+table6<-readxl::read_xlsx("data/table6.xlsx") %>%
+  slice(c(1:4,6,8:12,5,7,13)) %>% 
+  mutate(`Language in OpenAlex` = case_when(`Language in OpenAlex` == "en" ~ "English",
+                                 `Language in OpenAlex` == "es" ~ "Spanish",
+                                 `Language in OpenAlex` == "de" ~ "German",
+                                 `Language in OpenAlex` == "fr" ~ "French",
+                                 `Language in OpenAlex` == "pt" ~ "Portugese",
+                                 `Language in OpenAlex` == "pl" ~ "Polish",
+                                 `Language in OpenAlex` == "tr" ~ "Turkish",
+                                 `Language in OpenAlex` == "hu" ~ "Hungarian",
+                                 `Language in OpenAlex` == "hr" ~ "Croatian",
+                                 `Language in OpenAlex` == "ro" ~ "Romanian",
+                                 is.na(`Language in OpenAlex`) ~ "Unknown",
+                                 `Language in OpenAlex` == "Total" ~ "Total",
+                                 `Language in OpenAlex` == "Other" ~ "Other"
+  )) 
+  
+table6 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%  
+  border(i = nrow(table6), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:3, align = "right", part = "all") %>% 
+#  set_caption("Table 6. Distribution of records by language in OpenAlex", align_with_table = FALSE) %>% 
+  bold(part = "header")
+```
+
+### Language Discrepancies
+
+For this part of the analysis, we focus on articles and review that are in English in Web of Science or in OpenAlex, and in a language other than English in the other database. In other words, we do not investigate discrepancies between Portuguese and Spanish or French and German, but only discrepancies for which one of the languages is English (e.g., English-German, English-Chinese).
+
+Table 7 and Table 8 respectively display the number of discrepancies found for articles in English in WoS and articles in English in OpenAlex. They also display the number of records manually investigated to determine whether the discrepancies stem from mislabeling non-English content as English, as well as the result of that investigation. To understand how an incorrect assignment may have occurred, we looked at the abstracts and full text on the landing page as well as the full text when it was available. Most sampled works seem to have multi-language abstracts either on the landing page or in the PDF of the full text. Also, some articles are published in multiple language, meaning that for some of the discrepancies observed, both OpenAelx and WoS are correct.
+
+A first observation is that WoS appears to be more accurate than OpenALex in terms of publication language. Table Only 20,086 English publications in the WoS were in another language according to OpenAlex, and in slightly less than half (48.2%) of the verified cases, the article was in fact in English.
+
+```{r}
+#| label: tbl-7 
+#| tbl-cap: "Language discrepancies for articles and reviews in English in WoS"
+
+table7<-readxl::read_xlsx("data/table7.xlsx") %>%
+  slice(c(1:3,5:10,4,11)) %>% 
+  rename(`Language in OpenAlex` = oa_language)
+
+table7 %>% 
+  flextable() %>%
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table7), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:6, align = "right", part = "all") %>% 
+  width(j = 1, width = 1.5) %>% 
+#  set_caption("Table 7.Language discrepancies for articles and reviews in English in WoS", align_with_table = FALSE) %>% 
+  bold(part = "header")
+```
+
+However, we notice that for some languages, such as French, German, Romanian and Croatian, the discrepancies correctly flagged articles mislabelled as English in WoS, although the sample sizes for Romanian and Croatian were quite small. On the other hand, the majority of articles labelled as English in WoS and as Spanish, Portuguese, or Turkish in OpenAlex were actually found to be in English.
+
+```{r eval = TRUE}
+#| label: tbl-8 
+#| tbl-cap: "Language discrepancies for articles and reviews in English in OpenAlex"
+
+table8<-readxl::read_xlsx("data/table8.xlsx") %>%
+  slice(c(1:5,7:10,6,11)) %>% 
+  rename(`Language in WoS` = wos_language)
+
+table8 %>% 
+  flextable() %>%
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table8), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  align(j = 2:6, align = "right", part = "all") %>% 
+  width(j = 1, width = 1.5) %>% 
+#  set_caption("Table 8.Language discrepancies for articles and reviews in English in OpenAlex", align_with_table = FALSE) %>% 
+  bold(part = "header")
+```
+
+## Publication year
+
+### Publication Year Distributions in WoS and OpenAlex
+
+Now turning our attention to discrepancies in publication years for articles in WoS and OpenAlex, we first present a statistical summary of the publication year in OpenAlexc and WoS (Table 9).
+
+```{r eval=TRUE}
+#| label: tbl-9
+#| tbl-cap: "Descriptive statistics summary of the publication year for articles and reviews in OpenAlex and WoS"
+
+
+table9<-readxl::read_xlsx("data/table9.xlsx") 
+
+table9 %>% 
+  rename(Database = database) %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table9), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:11, align = "right", part = "all")
+#  set_caption("Table 9. descriptive statistics summary of publication year in for articles and reviews in OpenAlex and WoS", align_with_table = FALSE)
+```
+
+### Publication Year Discrepancies
+
+We observe a high prevalence of publication year discrepancies in articles and reviews in the WoS and OpenAlex, with 470,107 cases identified (see Table 10). We obtain the direction and extent of the discrepancies by substracting the OpenAlex publication year from the WoS publication year. A difference of 1 indicates that according to WoS the article was published one year later than accoridng to OpenAlex. Inversely, a difference of -1 indicates that the articles was published one year ealier accoring to WoS than according to OpenAlex.
+
+```{r echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
+#| label: tbl-10
+#| tbl-cap: "Number of publication year discrepancies for articles and reviews in WoS and OpenAlex (total and sampled)"
+
+
+
+table10 <- readxl::read_xlsx("data/table10.xlsx") %>% 
+    rename(`Difference in publication year (WoS - OpenAlex)` = bin)
+
+
+table10 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   border(i = nrow(table10), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:5, align = "right", part = "all")
+#  set_caption("Table 10. Number of publication year discrepancies for articles and reviews in WoS and OpenAlex (total and sampled)", align_with_table = FALSE)
+```
+
+### Explanation for Publication Year Discrepancies
+
+From our investigation of the discrepancies, we observed four general possible publication year that one record can have in either database:
+
+-   Issue year: the year of the journal issue in which the article is officially published. This is also the year included in the reference to the article.
+-   First publication year: the year in which the article was first published online before it was assigned to an issue.
+-   Other year: another year that is recorded in the article's history but is not a publication year (e.g., submission year, accepted year).
+-   Source unclear: we use this code when the publication year in the WoS or OpenAlex record does not match any of the years listed in in the landing page or the PDF.
+
+We used these four scenarios to group publication year discrepancies between WoS and OpenAlex into six categories. The first two are 1) OA has first year, WoS has issue year and 2) OA has issue year, WoS has first year. In these cases, we considered both databases to be correct because both dates are actually referring to a publication event. The following four categories indicate errors in one of the databases that include none of the two accepted publication years: 3) OA has other year, 4) OA source unclear, 5) WoS has other year, and 6) WoS source unclear.
+
+As shown in Figure 1, erroneous publication years are rare overall in the sample that we analyzed and mostly occur when there are significant discrepancies between the WoS and OpenAlex publication years. However, these errors appear to be more prevalent in OpenAlex. For half of the sampled articles published 2 or 3 years later according to OpenAlex compared to WoS, the source of the OpenAlex publication year was not found on the article landing page or PDF and appeared to be wrong. This was also the case for 20% of the articles with a publication year in OpenAlex three or more years earlier than in the WoS. In contrast, we only found a few instances (four in total) where the WoS publication year appeared to be erroneous.
+
+```{r eval= FALSE, warning=FALSE, message=FALSE}
+fig1<-readxl::read_xlsx("data/_final_pub_year_sample.xlsx") %>% 
+  mutate(diff_pub_year = wos_pub_year - oa_pub_year) %>% 
+  mutate(bin = case_when(diff_pub_year < -3 ~ "< -3",
+                         diff_pub_year %in% (-2:-3) ~ "-2 to -3",
+                         diff_pub_year == -1 ~ "-1",
+                         diff_pub_year == 1 ~ "1",
+                         diff_pub_year %in% 2:3 ~ "2 to 3",
+                         diff_pub_year > 3 ~ "> 3",
+                         )) %>% 
+  group_by(bin, Code) %>%
+  reframe(n = n()) %>% 
+  ungroup()
+
+library(scales)
+fig1<-fig1 %>% 
+  mutate(bin = fct_relevel(bin,"< -3", "-2 to -3","-1","1","2 to 3","> 3")) %>%
+  ggplot() +
+  aes(fill=Code, y=n, x=bin) + 
+    geom_bar(position="fill", stat="identity") +
+    scale_fill_npg() +
+    theme_minimal() +
+    scale_y_continuous(labels = percent_format(accuracy = 1)) +
+    xlab("") +
+    ylab("Pct. of sampled discrepancies") +
+    labs(fill = "Categories") + 
+    labs(caption = "Figure 1. Relative distribution of discrepancies categories across bins of publication year differences") +
+    theme(plot.caption = element_text(hjust = 0.10, size = 10))
+
+ggsave("images/fig1.jpg", device="jpg", width = 7, height = 4.5, units = "in", dpi=300)
+
+```
+
+![](images/fig1.jpg){fig-align="center"}
+
+Figure 1 shows that discrepancies for which the OpenAlex year is prior to the WoS year are largely explained by cases where OpenAlex has the first publication year and WoS has the issue year, especially when the discrepancy is small (one year). This is expected given that the first publication year is typically before the journal issue year. Inversely, most cases in which the WoS publication year is prior to the OpenAlex publication year are explained by cases where WoS has the first publication year and OpenAlex has the journal issue year. Interestingly, neither database appears to be systematic in the way it indexes the year of first publication or the year of the journal issue.
+
+## Number of authors
+
+Now turning our attention to discrepancies in publication years for articles in WoS and OpenAlex, we first present a statistical summary....
+
+```{r eval=TRUE}
+#| label: tbl-11
+#| tbl-cap: "Descriptive statistics summary of the number of authors for articles and reviews in OpenAlex and WoS"
+
+
+table11<-readxl::read_xlsx("data/table11.xlsx") 
+
+table11 %>% 
+  rename(Database = database) %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table11), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:11, align = "right", part = "all")
+#  set_caption("Table 9. descriptive statistics summary of publication year in for articles and reviews in OpenAlex and WoS", align_with_table = FALSE)
+
+```
+
+```{r echo = FALSE, eval = TRUE, message=FALSE, warning=FALSE}
+#| label: tbl-12
+#| tbl-cap: "Number of discrepancies in the number of authors for articles and reviews in WoS and OpenAlex (total and sampled)"
+
+
+
+table12 <- readxl::read_xlsx("data/table12.xlsx") %>% 
+    rename(`Difference in number of authors (WoS - OpenAlex)` = bin)
+
+
+table12 %>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   border(i = nrow(table12), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:5, align = "right", part = "all")
+#  set_caption("Table 10. Number of publication year discrepancies for articles and reviews in WoS and OpenAlex (total and sampled)", align_with_table = FALSE)
+
+
+```
+
+### Explanation for Author Count Discrepancies
+
+Of the 257 publications with discrepancies investigated, about half (122; 47.5%) had a group author on the byline. For these cases, many of the discrepancies are explained by what appears to be a different treatment of group authors by OpenAlex and WoS. As shown in Table 13, OpenAlex appears to be counting as authors each member of the group listed on the byline, but only when that list is displayed on the landing page. However, the group tends to be ignored when its members are not listed on the landing page. WoS usually does not count members of a group listed on the byline as authors, regardless of whether or not the names appear on the landing page.
+
+```{r eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: tbl-13
+#| tbl-cap: "Treatment of group authors in WoS and OpenAlex relative to the presence of the group members list on the landing page."
+table13<- readxl::read_excel("data/table13.xlsx") 
+
+table13%>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table13), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:5, align = "right", part = "all")
+```
+
+While group members are typically not counted as authors in WoS, the group itself typically is. For example, a paper with two authors and a group with 10 members will have an author count of 3 in WoS. Conversely, OpenAlex does not include the group in the author count, so the same paper will typically have an author count of 2 or 12, depending on whether the group members appeared on the landing page.
+
+For papers with a group author, OpenAlex and WoS having a different author count for the same paper does not mean that either database contains the correct number of authors. However, for publications that do not have group authors, determining which database has the correct author count is more straightforward. As shown in Table 14, OpenAlex was more likely to be correct (74.8% of the time) in these cases.
+
+```{r eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+#| label: tbl-14
+#| tbl-cap: "Number and share of valid records in OpenAlex and WoS in cases of author count discrepancies with no group authors listed on the byline."
+table14<- readxl::read_excel("data/table14.xlsx") 
+
+table14%>% 
+  flextable() %>% 
+  set_table_properties(width = 1, layout = "autofit") %>%   
+  border(i = nrow(table14), border.top = fp_border(width = 1)) %>% 
+  padding(i = NULL, j = NULL, 
+          padding.top = 2,
+          padding.bottom = 2,
+          padding.left = 2,
+          padding.right = 2) %>% 
+  separate_header() %>% 
+  bold(part = "header") %>%
+  align(j = 2:5, align = "right", part = "all")
+
+```
+
+# Discussion and conclusion
+
+### Summary of findings
+
+In some regards, our findings generally offer support to past claims that metadata quality in OpenAlex has room for improvement. It is particularly the case for document types, with 300,000 cases where a publication was classified as an article or review in OpenAlex but not in WoS, and almost all manually verified instances pointing to a true misclassification in OpenAlex. This may be a cause for concern as document type classifications are critical for bibliometric research and evaluation. Document type misclassifications were also present in WoS, although they were much less frequent.
+
+Discrepancies in publication language were also observed on both less common by an order of magnitude. In this case, we also did not identify a clear advantage for one database over the other. There were more cases of articles in English in WoS and not in OpenAlex than the other way around, however WoS was actually correct in 53% of the time. On the other hand, OpenAlex had fewer articles in English that were in another language according to WoS, but those cases tended to be true misclassifications in OpenAlex. In several instances, both databases were technically correct because we found that the article was in fact published in mutliple languages. This highlights a potential issue with metadata schema that only allow a single value for language. The language discrepancies observed may also be explained by the fact that the OpenAlex language field is algorithmically derived from the metadata (title & abstract), and that the *langdetect* algorithm is limited to 55 languages [@cespedes2024linguistic]. The lack of standardized schemes for romanization of non-roman languages may also cause some issues not only in terms of metadata quality and the ability for algorithms to properly detect language [@shi2025metadata].
+
+Our investigation of publication year discrepancies highlighted that the year of first publication tended to be preferred by OpenAlex, while the use of the issue year was more frequent in WoS. However, both databases displayed inconsistencies in that regard. This challenge with the ambiguity of the publication year and the different, arguably equally valid, approaches to recording it have been previously identified and discussed by @haustein and @liu2021samejournal. This is another limitation that could potentially be fixed by recording all the years in the metadata schema rather than allowing only one publication year.
+
+Overall, we see that OpenAlex was most correct on author counts for 53.7% of the subset of works, whereas WoS was correct for 33.2% of the subset. The listing of consortia or other group identifiers on the byline was a major cause of discrepancies. While both OpenAlex and WoS have other methods for extracting authors from landing pages and full text, publisher-supplied metadata should align with the published work. There is great inconsistency in how these groups are accounted for, credit is given for authorship, how members are identified, and the language used to signify how authors work on behalf of or as part of a consortium. In some cases, the complete author list was included, but in other cases, we could not find a list of the group or consortium members. More work needs to be done to document these local practices to promote consistency in author reporting and responsibilities. We also observed consistently that OpenAlex excludes organization names as contributors, even if they are listed in the byline on the landing page and the PDF version of an article. Their process does not seem to affect singular names, such as those used in non-Western naming conventions, but it does seem to exclude consortia and other group identifiers appearing in the byline. Conversely, WoS seems to count the group author as a single author consistently.
+
+### On the accuracy and internal consistency of metadata and their implication for bibliometrics.
+
+Sometimes there may be an absolute truth against which we can judge the accuracy of a metadata record. For example, a single-author article recorded as having any other number of authors in a database constitutes a true error and was considered as such in our analysis.
+
+However, as we have discussed through the different sections of our analysis, a discrepancy between two records representing the same objects in two databases does not necessarily imply the presence of an error in one database or the other. This was particularly evident for publication years and author counts. This offers support to our choice not to consider one database as the gold standard against which the other is to be evaluated. While this may firmly entrench us in a perpetual instance of Segal's law, it is arguably more reasonable to acknowledge that different databases may yield slightly different outcomes that are both valid. Of course, we are not suggesting that a database may not contain more or fewer errors and may not be considered more or less reliable than another. We are merely stating that, in some instances, discrepancies between two databases do not necessarily allow to draw firm conclusions about the superiority of one over the other in terms of reflecting the reality that they are meant to capture.
+
+On the other hand, if and only if the database providers have clear and transparent metadata policies, then we may be able to assess a database's internal consistency relative to these policies. In our analysis of author counts, for instance, WoS appeared to be very consistent in its treatment of group authors which were almost always counted as a single author. If that is indeed the intent, then our assessment would be that there is a high level of internal consistency. However, even if that is the case, the possibility remains that this is actually not the intended way of counting authors, in which case the metadata in WoS would be internally consistent but consistently erroneous, which is arguably worse than being wrong only some of the time.
+
+In sum, we would argue that assessing the validity of a metadata element can only be done by comparing it to the full range of possible truth and considering the metadata consistency with the database's internal policy. Then we can classify any metadata element into one of four categories: 1) Internally consistent and valid, 2) Internally consistent but invalid, 3) internally inconsistent but valid, and 4) internally inconsistent and invalid. In the absence of clear policies regarding specific metadata elements, it may be challenging to determine what is an issue and what is not. Differences among data sources regarding indexing coverage are, to a degree, largely understood and part of decision-making, and the choice of WoS and Scopus to be selective in the sources they cover contrasts with OpenAlex's focus on comprehensiveness. It is up to the users to understand the tools they use and to make choices that align with the needs of their analyses [@barbour2025criteria].
+
+It is also important to acknowledge that database providers do not usually create metadata records from scratch but work within an ecosystem of actors and data infrastructures from which their metadata records are sourced. A lack of standardization of practices across providers and a lack of quality control at the journal or publisher level may pose important challenges to aggregators like OpenAlex and WoS. Indeed, Elsevier acknowledged metadata issues as occasional processing errors inherent to large databases [@meester2016response].
+
+Investigations of the coverage and metadata quality of databases matter because these are tools that we use to conduct bibliometric research and assessments. Are validity and consistency sufficient criteria to consider a record reliable in this context? We would argue that it is not. When calculating some of the most common bibliometric indicators, such as the normalized citation score, we want to compare an article with other articles with the same document types (comparable forms of output) that have been published in the same year (comparable time to accumulate citations). Of course, this approach is already imperfect as an article published on January 1st will be compared with articles published on December 31 of the same year (twelve months apart), but not with articles published on December 31 of the prior year (one day apart). However, these are methodological choices that are made by the bibliometrics community when designing and adopting indicators. However, dealing with alternate truths regarding the publication year of an article (e.g., first publication year vs. issue year) is not a choice, but a deviation from the intent behind the use of an indicator. This issue would perhaps be negligible if the database were internally consistent, but our findings suggest that this is not necessarily the case. More than 50,000 discrepancies in publication years occurred because WoS used the online publication year and OpenAlex used the issue year, and nearly 390,000 discrepancies for which it appears to be the reverse.
+
+### Limitations and future work
+
+One of the main limitations of our study is its scope. We focused on four metadata elements, but the databases contain many more that we are not considering. Furthermore, we only compared OpenAlex with WoS and not with other databases, and also only considered publications published between 2011 and 2013 in either database. This provides us with a current snapshot of the databases, but no insights into the temporal dynamics of the discrepancies. We were also limited in our investigation of discrepancies in the information easily accessible on the article's landing page and on the PDFs. OpenAlex and WoS draw much of their data from other sources, such as Crossref, which may offer some additional information that could explain some of the discrepancies observed [@eck2025crossref]. Another important limitation is that the OpenAlex database is rapidly evolving and some of the observed issues may be caused by processes that have since been modified.
+
+This study focused on the nature of the discrepancies and their frequency. We discussed the possible implications that they may have for bibliometric analyses and research evaluation, but more research will be needed to empirically determine if and how the outcomes of bibliometric analyses are impacted at different levels. We also did not investigate disciplinary differences in the discrepancies. Further research should take into account additional metadata elements, examine disciplinary differences, and assess how metadata quality issues in OpenAlex could affect institutional-level metrics and, thus, the results of institutional rankings like the open edition of the Leiden Ranking.
+
+The Paris Conference on Open Research Information and the Barcelona Declaration on Open Research Information emphasize the need for and normalization of open research information. With the tide turning toward open data sources and researchers and institutions embracing OpenAlex and other open data sources and tools, more research will be needed on the quality and coverage of OpenAlex and the other data sources it depends on. This carries implications for OpenAlex, as they look to the research community for feedback on necessary improvements to their metadata, as well as for those conducting research and research evaluation using open sources, who must remain apprised of findings related to limitations of the data they use.
+
+# Conflicts of interest
+
+The authors have no conflicts of interest to report.
+
+# Author contributions
+
+[Conceptualization](http://credit.niso.org/contributor-roles/conceptualization/) (PM), [Data curation](http://credit.niso.org/contributor-roles/data-curation/) (PM), [Formal analysis](http://credit.niso.org/contributor-roles/formal-analysis/) (PM), Investigation (PM, MH, GK, RM, PR, RT, SW), [Project administration](http://credit.niso.org/contributor-roles/project-administration/) (PM), [Visualization](http://credit.niso.org/contributor-roles/visualization/) (PM), [Writing – original draft](http://credit.niso.org/contributor-roles/writing-original-draft/) (PM, MH, PR), [Writing – review & editing](http://credit.niso.org/contributor-roles/writing-review-editing/) (PM, MH, GK, RM, PR, RT, SW)
+
+# References

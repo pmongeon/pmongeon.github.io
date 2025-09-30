@@ -1,0 +1,66 @@
+---
+title: "Gender Disparity in Funding Rates in Double-Blind Grant Peer Review: The Case of the Villum Experiment"
+subtitle: (Article)
+date: 2025-07-03
+author:
+  - Emil Bargmann Madsen
+  - Philippe Mongeon
+  - Jesper Wiborg Schneider
+authors:
+  - name: Emil Bargmann Madsen 
+    orcid: 0000-0003-4394-5373
+    corresponding: false
+    affiliations: 
+      - ref: cfa
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Jesper Wiborg Schneider
+    orcid: 0000-0001-5556-0919
+    corresponding: true
+    email: jws@ps.au.dk
+    affiliations: 
+      - ref: cfa
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: cfa
+    name: Aarhus University
+    address: Aarhus, Denmark
+categories: 
+  - Funding
+  - Peer-review
+  - Disparities
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1162/qss.a.5
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: true
+---
+
+# Citation
+
+Madsen, E. B., Mongeon, P., & Schneider, J. W. (2025). Gender disparity in funding rates in double-blind grant peer review: The case of the Villum Experiment. *Quantitative Science Studies*, 1–22. <https://doi.org/10.1162/qss.a.5>
+
+# Abstract
+
+The Villum Experiment (VEX) is one of the few funding schemes that employs a double-blind review process where applicants are blinded to reviewers, applications are highly standardized, reviewers do not deliberate, and funding is determined solely by ranked aggregated review scores. This unique controlled setting enables assumptions that direct reviewer gender bias is highly unlikely. Using a causal framework (DAG), we examine the extent to which gender disparities in funding may exist in such a setting. Our analyses of 2,041 applications from five funding rounds (2017–2021) reveal a small but consistent gender disparity in success rates, concentrated within the Life Science panel. As reviewer bias is unlikely in this setting, these disparities or structural inequalities are likely caused by differences in gender compositions across disciplines and the underrepresentation of highly experienced women among the applicants and in the population in general. Multilevel modeling with post-stratification indicates that accounting for these structural factors removes the disparity in funding success rates. Our findings highlight that gender disparity in funding may remain without direct review bias. In this case, such remaining disparities are likely rooted in broader structural inequalities within academia and/or compositional effects.
+
+# Key figures
+
+![Figure 1. The causal model. A directed acyclic graph (DAG) illustrating the proposed causal mechanisms that can lead to gendered differences in success rates for the Villum Experiment fund ing scheme. The dashed arrow from gender to funding illustrates that blinded reviews should ideally remove the potential direct effect, as gender bias in reviews is rendered impossible. Purple nodes are intermediate variables signifying different indirect effects from gender to funding outcome. Potential indirect effects are represented in the DAG as paths through purple nodes. The gray node is an unobserved, possibly confounding, factor.](images/clipboard-1547904559.png){fig-align="center" width="350"}

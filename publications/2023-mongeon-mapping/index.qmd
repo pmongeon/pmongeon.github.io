@@ -1,0 +1,87 @@
+---
+title: "Mapping Information Research in Canada"
+subtitle: (Article)
+date: 2023-12-20
+author:
+  - Philippe Mongeon
+  - Catherine Gracey
+  - Poppy Riddle
+  - Madelaine Hare
+  - Marc-André Simard
+  - Jean-Sébastien Sauvé
+authors:
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: true
+    email: pmongeon@dal.ca
+    affiliations:
+      - ref: dal
+  - name: Catherine Gracey
+    orcid: 0000-0002-6431-4928
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Poppy Riddle
+    orcid: 0000-0001-7862-7848
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Madelaine Hare
+    orcid: 0000-0002-2123-9518
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Marc-André Simard
+    orcid: 0000-0003-3795-0053
+    corresponding: false
+    affiliations: 
+      - ref: udem
+  - name: Jean-Sébastien Sauvé
+    orcid: 0000-0002-9472-2965
+    corresponding: false
+    affiliations: 
+      - ref: udem
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: udem
+    name: Université de Montréal
+    address: Montréal, Québec, Canada
+categories: 
+  - Library and Information Science
+  - Canada
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.5206/cjils-rcsib.v46i2.15568
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Mongeon, P., Gracey, C., Riddle, P., Hare, M., Simard, M.-A. & Sauvé, J.-S. (2023). Mapping information research in Canada. *The Canadian Journal of Information and Library Science / La Revue canadienne des sciences de l’information et de bibliothéconomie*, *46*(2), 1–27. <https://doi.org/10.5206/cjils-rcsib.v46i2.15568>
+
+# Abstract
+
+This study examines the Canadian information research landscape through the lens of the eight academic units hosting ALA-accredited programs. We created a citation-based network utilizing the scholarly articles published by the faculty members and PhD students at each academic unit to identify and characterize distinct research clusters within the field. Then we determined how the publications and researchers from each unit are distributed across the clusters to describe their area of specialization. Our findings emphasize how the inter-, multi-, and transdisciplinary nature of the Canadian information research landscape forms a rich mosaic of information scholarship.
+
+# Résumé
+
+Cet article examine le paysage canadien de la recherche en sciences de l’information à travers le prisme des huit unités universitaires offrant des programmes d’études accrédités par l'ALA. Nous avons réalisé un réseau basé sur les citations en utilisant les articles scientifiques publiés par les membres du corps professoral et les doctorants de chaque unité universitaire pour identifier et caractériser des grappes de recherche distinctes dans le domaine. Ensuite, nous avons déterminé comment les publications et les chercheurs de chaque unité sont répartis dans les grappes de recherche pour décrire leur domaine de spécialisation. Nos résultats soulignent comment la nature inter-, multi- et transdisciplinaire du paysage canadien de la recherche en sciences de l’information forme une riche mosaïque de travaux dans le domaine de l’information.
+
+# Key figures
+
+![Map of the research output of scholars affiliated with the eight Canadian academic units offering ALA-accredited programs](images/clipboard-394695485.png){fig-align="center"}

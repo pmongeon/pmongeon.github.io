@@ -1,0 +1,77 @@
+---
+title: "A Bibliometric Analysis of Race-Related Research in LIS"
+subtitle: (Article)
+date: 2021-05-01
+author:
+  - Philippe Mongeon
+  - Alison Brown
+  - Ratna Dhaliwal
+  - Jessalyn Hill
+  - Amber Matthews
+authors:
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: true
+    email: pmongeon@dal.ca
+    affiliations:
+      - ref: dal
+  - name: Alison Brown
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Ratna Dhaliwal
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Jessalyn Hill
+    corresponding: false
+    affiliations: 
+      - ref: mcgill
+  - name: Amber Matthews
+    orcid: 0000-0002-1937-3187
+    corresponding: false
+    affiliations: 
+      - ref: western
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: mcgill
+    name: McGill University
+  - id: western
+    name: Western University
+    
+categories: 
+  - Disparities
+  - Library and Information Science
+  
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.3233/EFI-211513
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Mongeon, P., Brown, A., Dhaliwal, R., Hill, J., & Matthews, A. (2021). A bibliometric analysis of race-related research in LIS. *Education for Information*, *37*(2), 231–246. <https://doi.org/10.3233/EFI-211513>
+
+# Abstract
+
+This special issue on race relations and racial inequity in Library and Information Science (LIS) is a response a recent wave of advocacy, activism, and protests. Its explicit purpose is to address the lack of research on race and inequity within our field. The purpose of this contribution to the issue is to substantiate that statement by performing a bibliometric analysis of the last 40 years of LIS scholarship to quantify the amount of attention given to race and racial inequality over that period. We find that despite an important increase in BIPOC-related research in LIS, the numbers remain quite low with approximately 2% of LIS publications containing terms related to racial inequality and BIPOC communities, and this research also tends to be less cited than the average LIS papers in the same area. We also find that this research is present in several areas of the field, although unevenly distributed across them. The trends presented in this paper may help when discussing sensitive issues regarding systematic discrimination, help create and sustain momentum towards change, and address the persistent lack of diverse perspectives and approaches across LIS scholarship and practice.
+
+# Key figures
+
+![Fig. 4. Giant component of the citation network of BIPOC-related research in LIS](images/clipboard-1729313297.png){fig-align="center" width="600"}

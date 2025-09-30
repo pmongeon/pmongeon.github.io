@@ -1,0 +1,37 @@
+[
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/2025-toupin-gesamp/index.html",
+      "/publications/2025-mongeon-wos-openalex/index.html",
+      "/publications/2025-cassady-big-deal/index.html",
+      "/publications/2025-madsen-gender/index.html",
+      "/publications/2025-simard-examining/index.html",
+      "/publications/2025-sauve-bibliometric/index.html",
+      "/publications/2025-sauve-database/index.html",
+      "/publications/2025-toupin-indentifying/index.html",
+      "/publications/2024-hare-cite/index.html",
+      "/publications/2024-kladakis-citation/index.html",
+      "/publications/2023-mongeon-mapping/index.html",
+      "/publications/2023-riddle-green-oa/index.html",
+      "/publications/2024-robertson-interference/index.html",
+      "/publications/2023-butler-oligopoly/index.html",
+      "/publications/2023-toupin-measuring/index.html",
+      "/publications/2023-mongeon-open/index.html",
+      "/publications/2022-sauve-art/index.html",
+      "/publications/2022-simard-national/index.html",
+      "/publications/2021-aagaard-getting/index.html",
+      "/publications/2021-mongeon-bibliometric/index.html",
+      "/publications/2021-mongeon-collection/index.html",
+      "/publications/2021-ferreira-large-scale/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": []
+  },
+  {
+    "listing": "/talks.html",
+    "items": []
+  }
+]

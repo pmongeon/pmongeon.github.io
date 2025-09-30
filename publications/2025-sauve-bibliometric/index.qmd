@@ -1,0 +1,91 @@
+---
+title: "A Bibliometric Analysis of Canadian LIS Scholars and Practitioners’ Research Contributions"
+subtitle: (Article)
+date: 2025-03-11
+author:
+  - Jean-Sébastien Sauvé
+  - Madelaine Hare
+  - Geoff Krause
+  - Constance Poitras
+  - Poppy Riddle
+  - Philippe Mongeon
+authors:
+  - name: Jean-Sébastien Sauvé 
+    orcid: 0000-0003-4394-5373
+    corresponding: true
+    email: jean-sebastien.sauve@umontreal.ca
+    affiliations: 
+      - ref: udem
+  - name: Madelaine Hare
+    orcid: 0000-0002-2123-9518
+    corresponding: false
+    affiliations: 
+      - ref: uottawa
+  - name: Geoff Krause
+    orcid: 0000-0001-7943-5119
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Constance Poitras
+    orcid: 0000-0002-3545-696X
+    corresponding: false
+    affiliations: 
+      - ref: udem
+  - name: Poppy Riddle
+    orcid: 0000-0001-7862-7848
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: uottawa
+    name: University of Ottawa
+    address: Ottawa, Ontario, Canada
+  - id: udem
+    name: Université de Montréal
+    address: Montréal, Québec, Canada
+categories: 
+  - Library and Information Science
+  - Canada
+  - Librarians
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.5206/cjils-rcsib.v48i1.22439
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Sauvé, J.-S., Hare, M., Krause, G., Poitras, C., Riddle, P. & Mongeon, P. (2025). A Bibliometric Analysis of Canadian LIS Scholars and Practitioners’ Research Contributions. *The Canadian Journal of Information and Library Science / La Revue canadienne des sciences de l’information et de bibliothéconomie*, *48*(1), 20–35. <https://doi.org/10.5206/cjils-rcsib.v48i1.22439>
+
+# Abstract
+
+Canada’s research productivity in Library and Information Science (LIS) is significant: studies have found that Canada ranks third globally in terms of output. As the LIS field continues to grow, the pace of output accelerates, and the scope of this work expands. The recently launched *Canadian Publications in Library and Information Science Database* compiles all Canadian scientific publications, including those authored by faculty members and academic librarians. This database offers the advantage of encompassing articles and librarian publications that may not be typically included in traditional bibliometric surveys, such as those conducted using databases like Web of Science, Scopus, and Library and Information Science Abstracts (LISA). Using this data, this study maps the scholarly contributions of Canadian LIS scholars and academic librarians to the field of LIS and examines whether Canadian LIS research is characterized by silos. This paper examines the similarities and differences in research output, impact, topics, and publication venues between academic librarians and scholars in Canada, as well as the extent to which academics and practitioners engage in research collaborations or reference each other’s work. We find that while there is some degree of overlap in research topics and publication venues between LIS academics and academic librarians, the two groups appear to act as distinct research communities with distinct topical foci and publishing habits. The two groups also do not appear to engage with each other strongly, either through collaboration or citing each other’s work.
+
+# Résumé
+
+La productivité de la recherche au Canada en bibliothéconomie et sciences de l'information (BSI) est significative : des études ont révélé que le Canada se classe au troisième rang mondial en termes de production. À mesure que le domaine continue de croître, le rythme de production s'accélère et la portée de ce travail s'élargit. La base de données récemment lancée des *Publications canadiennes en bibliothéconomie et sciences de l'information* compile les publications de membres du corps professoral et de bibliothécaires universitaires au Canada. Cette base de données offre l'avantage d'inclure des articles et des publications de bibliothécaires qui ne sont pas toujours inclus dans les enquêtes bibliométriques traditionnelles, telles que celles menées à l'aide de bases de données comme Web of Science, Scopus et Library and Information Science Abstracts (LISA). En utilisant ces données, cette étude cartographie les contributions scientifiques des chercheurs canadiens en BSI et des bibliothécaires universitaires au domaine et examine si la recherche canadienne en LIS est caractérisée par des silos. Cet article examine les similitudes et les différences dans la production de recherche, l'impact, les sujets et les lieux de publication entre les bibliothécaires universitaires et les chercheurs au Canada, ainsi que la mesure dans laquelle les universitaires et les praticiens s'engagent dans des collaborations de recherche ou se réfèrent aux travaux des uns et des autres. Nous constatons que, bien qu'il existe un certain degré de chevauchement dans les sujets de recherche et les lieux de publication entre les universitaires en LIS et les bibliothécaires universitaires, les deux groupes semblent constituer des communautés de recherche distinctes avec des focalisations thématiques et des habitudes de publication distinctes. Les deux groupes ne semblent pas non plus intéragir fortement tant au niveau de la collaboration qu'au niveau des citations.
+
+# Key figures
+
+![Distribution of venues by share of articles authored by academics](images/clipboard-2344505572.png){fig-align="center"}

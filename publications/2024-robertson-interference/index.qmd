@@ -1,0 +1,91 @@
+---
+title: "Interference in Science: Scientists’ Perspectives on their Ability to Communicate and Conduct Environmental Research in Canada"
+subtitle: (Article)
+date: 2023-11-30
+author:
+  - Manjulika Robertson
+  - Samantha Chu
+  - Anika Cloutier
+  - Philippe Mongeon
+  - Don Driscoll
+  - Tej Heer
+  - Alana Westwood
+authors:
+  - name: Manjulika Robertson
+    orcid: 0009-0009-7393-7914
+    corresponding: true
+    email: manjulika.robertson@dal.ca
+    affiliations: 
+      - ref: dal
+  - name: Samantha Chu
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Anika Cloutier
+    orcid: 0000-0001-5731-1449
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Don Driscoll
+    orcid: 0000-0002-1560-5235
+    corresponding: false
+    affiliations:
+      - ref: deakin
+  - name: Tej Heer
+    orcid: 0000-0003-2582-6119
+    corresponding: false
+    affiliations: 
+      - ref: e4d
+  - name: Alana Westwood
+    orcid: 0000-0002-5388-356X
+    corresponding: false
+    affiliations: 
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id:  deakin
+    name:  Deakin University
+  - id: e4d
+    name: Evidence for Democracy
+
+categories: 
+  - Research integrity
+  - Knowledge Mobilization
+  - Canada
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1139/facets-2023-0005
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Robertson, M. E., Chu, S. M., Cloutier, A., Mongeon, P., Driscoll, D. A., Heer, T., & Westwood, A. R. (2023). Interference in science: Scientists’ perspectives on their ability to communicate and conduct environmental research in Canada. *FACETS*, *8*, 1–31. <https://doi.org/10.1139/facets-2023-0005>
+
+# Abstract
+
+When researchers are sufficiently resourced to conduct research and communicate their findings, the knowledge produced can benefit the environment and society through policy. However, interference with the research process and its subsequent knowledge mobilization (“interference in science”) has been observed in several countries, particularly for environmental researchers. Using a mixed-methods approach, we surveyed environmental researchers in Canada (n = 741) to investigate the perceived prevalence, source, and effects of interference and considered whether these perceptions differ by region, career stage, research area, and membership in any scientific society. Although over half of researchers were not restricted from speaking to the media (54%), and most had never been asked to make “undue modifications” to their work (84%), the vast majority (92%) reported at least some degree of interference in their work during their careers. Consequences of interference were more prevalent among early-career researchers and included negative impacts on job satisfaction, mental health, and undue modification to work leading to inaccurate or incomplete science communication. Although environmental researchers in Canada deem themselves overall better able to conduct and communicate their work than under previous federal governments, reports of ongoing political interference remain concerning. We recommend increased support for researchers and further investigations into interference.
+
+# Key figures
+
+![Fig. 6. Responses to Q7: I am aware of cases where the health and safety of Canadians (or environmental sustainability) has been compromised because of political interference with scientific work at our organization. (n = 684), Q8: I am aware of cases where our organization has suppressed or declined to release information, and where this led to incomplete, inaccurate, or misleading impressions by the public, regulated industry, the media and/or government officials. (n = 692), and Q9: I am aware of cases where the exchange or transfer of knowledge based on scientific evidence for the purpose of developing policy, law, and/or programs at our organization has been compromised by political interference. (n = 696). Responses are reported in the figure.](images/clipboard-2114706610.png){fig-align="center"}

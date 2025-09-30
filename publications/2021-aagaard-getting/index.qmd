@@ -1,0 +1,69 @@
+---
+title: "Getting to the Bottom of Research Funding: Acknowledging the Complexity of Funding Dynamics"
+subtitle: (Article)
+date: 2021-05-12
+author:
+  - Kaare Aagaard
+  - Philippe Mongeon
+  - Irene Ramos-Vielba
+  - Duncan Andrew Thomas
+authors:
+  - name: Kaare Aagaard 
+    orcid: 0000-0003-2983-073X
+    corresponding: true
+    email: ka@ps.au.dk
+    affiliations: 
+      - ref: cfa
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Irene Ramos-Vielba
+    corresponding: false
+    affiliations: 
+      - ref: cfa
+  - name: Duncan Andrew Thomas
+    corresponding: true
+    email: jws@ps.au.dk
+    affiliations: 
+      - ref: cfa
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: cfa
+    name: Aarhus University
+    address: Aarhus, Denmark
+categories: 
+  - Funding
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1371/journal.pone.0251488    
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Aagaard, K., Mongeon, P., Ramos-Vielba, I., & Thomas, D. A. (2021). Getting to the bottom of research funding: Acknowledging the complexity of funding dynamics. *PLOS ONE*, *16*(5), e0251488. <https://doi.org/10.1371/journal.pone.0251488>
+
+# Abstract
+
+Research funding is an important factor for public science. Funding may affect which research topics get addressed, and what research outputs are produced. However, funding has often been studied simplistically, using top-down or system-led perspectives. Such approaches often restrict analysis to confined national funding landscapes or single funding organizations and instruments in isolation. This overlooks interlinkages, broader funding researchers might access, and trends of growing funding complexity. This paper instead frames a ‘bottom-up’ approach that analytically distinguishes between increasing levels of aggregation of funding instrument co-use. Funding of research outputs is selected as one way to test this approach, with levels traced via funding acknowledgements (FAs) in papers published 2009–18 by researchers affiliated to Denmark, the Netherlands or Norway, in two test research fields (Food Science, Renewable Energy Research). Three funding aggregation levels are delineated: at the bottom, ‘funding configurations’ of funding instruments co-used by individual researchers (from single-authored papers with two or more FAs); a middle, ‘funding amalgamations’ level, of instruments co-used by collaborating researchers (from multi-authored papers with two or more FAs); and a ‘co-funding network’ of instruments co-used across all researchers active in a research field (all papers with two or more FAs). All three levels are found to include heterogenous funding co-use from inside and outside the test countries. There is also co-funding variety in terms of instrument ‘type’ (public, private, university or non-profit) and ‘origin’ (domestic, foreign or supranational). Limitations of the approach are noted, as well as its applicability for future analyses not using paper FAs to address finer details of research funding dynamics.
+
+# Key figures
+
+![Fig 1. Three levels of a bottom-up approach to research funding dynamics. Line thickness between instruments (boxes) of different classes (e.g. type, origin, providing funder) in the co-funding network represents occurrences of instrument classes that have been co-used.](images/clipboard-3477674976.png){fig-align="center" width="800"}

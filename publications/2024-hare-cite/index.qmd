@@ -1,0 +1,97 @@
+---
+title: "Do you Cite what you Tweet? Investigating the Relationship Between Tweeting and Citing Research Articles"
+subtitle: (Article)
+date: 2024-05-01
+author:
+  - Madelaine Hare
+  - Geoff Krause
+  - Keith MacKnight
+  - Timothy Bowman
+  - Rodrigo Costas
+  - Philippe Mongeon
+authors:
+  - name: Madelaine Hare 
+    orcid: 0000-0002-2123-9518
+    corresponding: true
+    affiliations: 
+      - ref: dal
+  - name: Geoff Krause
+    orcid: 0000-0001-7943-5119
+    corresponding: false
+    affiliations:
+      - ref: dal
+  - name: Keith MacKight
+    orcid: 0009-0001-0059-1926
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Keith MacKight
+    orcid: 0009-0001-0059-1926
+    corresponding: false
+    affiliations: 
+      - ref: dal
+  - name: Timothy Bowman
+    orcid: 0000-0003-0247-4771
+    corresponding: false
+    affiliations: 
+      - ref: wayne
+  - name: Rodrigo Costas
+    orcid: 0000-0002-7465-6462
+    corresponding: false
+    affiliations: 
+      - ref: cwts
+      - ref: stellenbosch
+  - name: Philippe Mongeon
+    orcid: 0000-0003-1021-059X
+    corresponding: false
+    affiliations: 
+      - ref: dal
+affiliations:
+  - id: dal
+    name: Dalhousie University
+    address: Halifax, Nova Scotia, Canada
+  - id: cwts
+    name: Leiden University
+    address: Leiden, Netherlands
+  - id: wayne
+    name: Wayne State University
+  - id: stellenbosch
+    name: Stellenbosch University
+categories: 
+  - Altmetrics
+  - Information behaviour
+  - Twitter
+bibliography: files/references.bib
+csl: files/apa.csl
+doi: https://doi.org/10.1162/qss_a_00296
+
+code-overflow: wrap
+code-tools: 
+  source: FALSE
+  toggle: TRUE
+execute:
+  warning: false
+  message: false
+  error: false
+  echo: false
+editor_options: 
+  chunk_output_type: inline
+  
+draft: false
+---
+
+# Citation
+
+Hare, M., Krause, G., MacKnight, K., Bowman, T. D., Costas, R., & Mongeon, P. (2024). Do you cite what you tweet? Investigating the relationship between tweeting and citing research articles. *Quantitative Science Studies*, *5*(2), 332‑350. <https://doi.org/10.1162/qss_a_00296>
+
+# Abstract
+
+The last decade of altmetrics research has demonstrated that altmetrics have a low to moderate correlation with citations, depending on the platform and the discipline, among other factors. Most past studies used academic works as their unit of analysis to determine whether the attention they received on Twitter was a good predictor of academic engagement. Our work revisits the relationship between tweets and citations where the tweet itself is the unit of analysis, and the question is to determine if, at the individual level, the act of tweeting an academic work can shed light on the likelihood of the act of citing that same work. We model this relationship by considering the research activity of the tweeter and its relationship to the tweeted work. The results show that tweeters are more likely to cite works affiliated with their same institution, works published in journals in which they also have published, and works in which they hold authorship. It finds that the older the academic age of a tweeter the less likely they are to cite what they tweet, though there is a positive relationship between citations and the number of works they have published and references they have accumulated over time.
+
+# Key figures
+
+![Citation rates by sociotopical characteristics.](images/clipboard-2275435232.png){fig-align="center" width="500"}
+
+# Links
+
+-   [Dataset](https://zenodo.org/records/8039458)
