@@ -1,23 +1,19 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: website
 
 website:
-  title: "Philippe Mongeon"
+  title: "Playground"
   navbar:
     right:
       - href: index.qmd
-        text: About
-#      - href: cv.qmd
-#       text: CV
-      - href: teaching.qmd
-        text: Teaching
-#      - href: talks.qmd
-#        text: Talks
-      - href: publications.qmd
+        text: Home
+      - href: notebooks.qmd
+        text: Notebooks
+      - href: pubs.qmd
         text: Publications
-#      - href: blog.qmd
-#        text: Blog
+      - href: slides.qmd
+        text: Slides
 format:
   html:
     toc: true
