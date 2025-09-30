@@ -1,6 +1,0 @@
-[1,"==> quarto preview teaching.qmd --to html --no-watch-inputs --no-browse\n\n"]
-[1,"pandoc \n  to: html\n  output-file: teaching.html\n  standalone: true\n  title-prefix: Philippe Mongeon\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  toc: true\n  reference-location: margin\n  css:\n    - styles.css\n  variables: {}\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  editor: visual\n  anchor-sections: true\n  fig-cap-location: margin\n  footnotes-hover: true\n  \n"]
-[1,"Output created: docs\\teaching.html\n\nTerminating existing preview server....DONE\n\n"]
-[1,"Preparing to preview\n"]
-[1,"\n"]
-[1,"Watching files for changes\nBrowse at http://localhost:3606/teaching.html\n"]
