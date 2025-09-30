@@ -5,7 +5,9 @@
   },
   {
     "listing": "/notebooks.html",
-    "items": []
+    "items": [
+      "/notebooks/frankenmetrics/index.html"
+    ]
   },
   {
     "listing": "/pubs.html",

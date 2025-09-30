@@ -1,6 +1,6 @@
 ---
 listing:
-  contents: talks
+  contents: slides
   sort: "date desc"
   type: default
   categories: true

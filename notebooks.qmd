@@ -1,6 +1,6 @@
 ---
 listing:
-  contents: publications
+  contents: notebooks
   sort: "date desc"
   type: default
   categories: true
