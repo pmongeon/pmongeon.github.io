@@ -18,9 +18,9 @@ bibliography: references.bib
 -   Formatting tables
 -   Formatting figures
 
-# Part 1 - Structuring text
+# Part 1 - Structuring text {.smaller}
 
-## Why structure matters
+## Why structure matters {.smaller}
 
 -   Your documents typically have readers; help them read and understand your work!
 -   A cluttered text without structure can reflect or be interpreted as a lack of understanding.
@@ -41,11 +41,11 @@ bibliography: references.bib
 -   Styles and Templates in Microsoft Word (a time saver)
 -   Zotero (for formatting references)
 
-# Demo
+# Demo {.smaller}
 
 Styles and templates in Microsoft Word + Zotero
 
-# Part 2 - Formatting tables
+# Part 2 - Formatting tables {.smaller}
 
 # Basic rules of tables formatting {.smaller}
 
@@ -59,7 +59,7 @@ Styles and templates in Microsoft Word + Zotero
 -   Align columns containing single characters to the centre.
 -   Align the column header the same way as the content of the columns.
 
-## Example
+## Example {.smaller}
 
 ![](images/clipboard-3819824641.png)
 
@@ -67,7 +67,7 @@ Styles and templates in Microsoft Word + Zotero
 
 ![](images/clipboard-2931975686.png)
 
-## Tips
+## Tips {.smaller}
 
 -   Keep your tables simple
 -   In some cases, you may find it easier to
@@ -75,7 +75,7 @@ Styles and templates in Microsoft Word + Zotero
     -   Copy it in Word (as a table, **not** as an image)
     -   Then use Word to format the table.
 
-# Part 3 - Formatting figures
+# Part 3 - Formatting figures {.smaller}
 
 -   All axes should be labelled
 -   Principle of proportional ink (i.e. the y-axis should start at 0).
@@ -85,4 +85,4 @@ Styles and templates in Microsoft Word + Zotero
 -   no 3D!
 -   For guidance on selecting appropriate graph types, see [MGMT2505 - Working with data course (ch. 10 to 12)](https://pmongeon.github.io/mgmt2605/ch10.html).
 
-## References
+## References {.smaller}
