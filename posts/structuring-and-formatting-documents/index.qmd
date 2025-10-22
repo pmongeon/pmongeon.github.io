@@ -1,6 +1,9 @@
 ---
 title: "Structuring and formatting documents"
-format: html
+format: revealjs
+editor: visual
+chalkboard: true
+toc: true
 bibliography: references.bib
 ---
 
