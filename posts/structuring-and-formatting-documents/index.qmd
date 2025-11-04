@@ -7,8 +7,9 @@ toc: true
 bibliography: references.bib
 ---
 
-## Plan {.smaller}
+# Part 1 - Structuring text {.smaller}
 
+<<<<<<< Updated upstream
 -   Why structure matters
 -   Tools to structure your text
 -   Heading levels
@@ -20,6 +21,8 @@ bibliography: references.bib
 
 # Part 1 - Structuring text {.smaller}
 
+=======
+>>>>>>> Stashed changes
 ## Why structure matters {.smaller}
 
 -   Your documents typically have readers; help them read and understand your work!
@@ -85,4 +88,8 @@ Styles and templates in Microsoft Word + Zotero
 -   no 3D!
 -   For guidance on selecting appropriate graph types, see [MGMT2505 - Working with data course (ch. 10 to 12)](https://pmongeon.github.io/mgmt2605/ch10.html).
 
+<<<<<<< Updated upstream
 ## References {.smaller}
+=======
+# References
+>>>>>>> Stashed changes
