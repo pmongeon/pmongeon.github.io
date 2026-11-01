@@ -14,13 +14,6 @@
     "text": "Bibliometrics and Scholarly Communication\nData Management\nInformation in Society\nIntroduction to Data Science\nResearch methods\nWorking with Data"
   },
   {
-    "objectID": "teaching.html#other-stuff",
-    "href": "teaching.html#other-stuff",
-    "title": "Philippe Mongeon",
-    "section": "Other Stuff",
-    "text": "Other Stuff\n\nStructuring and formatting documents, tables and figures"
-  },
-  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Philippe Mongeon",
@@ -47,6 +40,20 @@
     "title": "A Bibliometric Analysis of Canadian LIS Scholars and Practitioners’ Research Contributions",
     "section": "",
     "text": "Citation\nSauvé, J.-S., Hare, M., Krause, G., Poitras, C., Riddle, P. & Mongeon, P. (2025). A Bibliometric Analysis of Canadian LIS Scholars and Practitioners’ Research Contributions. The Canadian Journal of Information and Library Science / La Revue canadienne des sciences de l’information et de bibliothéconomie, 48(1), 20–35. https://doi.org/10.5206/cjils-rcsib.v48i1.22439\n\n\nAbstract\nCanada’s research productivity in Library and Information Science (LIS) is significant: studies have found that Canada ranks third globally in terms of output. As the LIS field continues to grow, the pace of output accelerates, and the scope of this work expands. The recently launched Canadian Publications in Library and Information Science Database compiles all Canadian scientific publications, including those authored by faculty members and academic librarians. This database offers the advantage of encompassing articles and librarian publications that may not be typically included in traditional bibliometric surveys, such as those conducted using databases like Web of Science, Scopus, and Library and Information Science Abstracts (LISA). Using this data, this study maps the scholarly contributions of Canadian LIS scholars and academic librarians to the field of LIS and examines whether Canadian LIS research is characterized by silos. This paper examines the similarities and differences in research output, impact, topics, and publication venues between academic librarians and scholars in Canada, as well as the extent to which academics and practitioners engage in research collaborations or reference each other’s work. We find that while there is some degree of overlap in research topics and publication venues between LIS academics and academic librarians, the two groups appear to act as distinct research communities with distinct topical foci and publishing habits. The two groups also do not appear to engage with each other strongly, either through collaboration or citing each other’s work.\n\n\nRésumé\nLa productivité de la recherche au Canada en bibliothéconomie et sciences de l’information (BSI) est significative : des études ont révélé que le Canada se classe au troisième rang mondial en termes de production. À mesure que le domaine continue de croître, le rythme de production s’accélère et la portée de ce travail s’élargit. La base de données récemment lancée des Publications canadiennes en bibliothéconomie et sciences de l’information compile les publications de membres du corps professoral et de bibliothécaires universitaires au Canada. Cette base de données offre l’avantage d’inclure des articles et des publications de bibliothécaires qui ne sont pas toujours inclus dans les enquêtes bibliométriques traditionnelles, telles que celles menées à l’aide de bases de données comme Web of Science, Scopus et Library and Information Science Abstracts (LISA). En utilisant ces données, cette étude cartographie les contributions scientifiques des chercheurs canadiens en BSI et des bibliothécaires universitaires au domaine et examine si la recherche canadienne en LIS est caractérisée par des silos. Cet article examine les similitudes et les différences dans la production de recherche, l’impact, les sujets et les lieux de publication entre les bibliothécaires universitaires et les chercheurs au Canada, ainsi que la mesure dans laquelle les universitaires et les praticiens s’engagent dans des collaborations de recherche ou se réfèrent aux travaux des uns et des autres. Nous constatons que, bien qu’il existe un certain degré de chevauchement dans les sujets de recherche et les lieux de publication entre les universitaires en LIS et les bibliothécaires universitaires, les deux groupes semblent constituer des communautés de recherche distinctes avec des focalisations thématiques et des habitudes de publication distinctes. Les deux groupes ne semblent pas non plus intéragir fortement tant au niveau de la collaboration qu’au niveau des citations.\n\n\nKey figures\n\n\n\nDistribution of venues by share of articles authored by academics"
+  },
+  {
+    "objectID": "publications/2025-mongeon-gesamp/index.html#data-and-methods",
+    "href": "publications/2025-mongeon-gesamp/index.html#data-and-methods",
+    "title": "The Scientific Contributions of GESAMP",
+    "section": "Data and Methods",
+    "text": "Data and Methods\n\nThe dataset"
+  },
+  {
+    "objectID": "publications/2025-mongeon-gesamp/index.html#results",
+    "href": "publications/2025-mongeon-gesamp/index.html#results",
+    "title": "The Scientific Contributions of GESAMP",
+    "section": "Results",
+    "text": "Results"
   },
   {
     "objectID": "publications/2025-madsen-gender/index.html",
@@ -105,11 +112,32 @@
     "text": "Citation\nFerreira, M. R., Mongeon, P., & Costas, R. (2021). Large-Scale Comparison of Authorship, Citations, and Tweets of Web of Science Authors. Journal of Altmetrics, 4(1), Article 1. https://doi.org/10.29024/joa.38\n\n\nAbstract\nSocial media platforms are increasingly part of the academic workflow. However, there is a lack of research that examines these activities, particularly at the author level. This paper explores the activity of researchers in the Twittersphere by analyzing a large database of Web of Science authors systematically identified on Twitter using data from Altmetric.com. Using this information, this paper explores and compares patterns of tweeted and self-tweeted publications with other academic activities, such as citations, self citations, and authorship at the author level. This paper also compares the thematic orientation among these different activities by analyzing the similarity of the research topics of the publications tweeted, cited, and authored. The results show that the productivity and impact of researchers, as defined by conventional bibliometric indicators, are not correlated to their popularity on the Twitter platform and that scholars generally tend to tweet about topics closely related to the publications they author and cite. These findings suggest that social media metrics capture a broader aspect of the academic workflow that is most likely related to science communication, dissemination, and engagement with wider audiences and that differs from conventional forms of impact as captured by citations. Areas for further exploration are also proposed.\n\n\nKey figures\n\n\n\nSpearman correlations of the main scientometric and Twitter indicators"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Philippe Mongeon",
-    "section": "",
-    "text": "Associate Professor and Chair of the Department of Information Science at Dalhousie University, Director of the QSSLab, Editor-in-Chief of CJILS-RCSIB, and associate member of CIRST."
+    "objectID": "posts/structuring-and-formatting-documents/index.html#tools-for-formatting-a-document",
+    "href": "posts/structuring-and-formatting-documents/index.html#tools-for-formatting-a-document",
+    "title": "Structuring and formatting documents",
+    "section": "Tools for formatting a document",
+    "text": "Tools for formatting a document\n\nTitle\nHeadings\n\nExample for research articles: Introduction, Method, Results and Discussion (IMRaD).\n\nSubheadings are generally recommended!\n\nAPA guidelines for headings and subheadings formatting.\n\nParagraphs\n\nOne paragraph per idea\nTopic sentence, supporting sentences, concluding sentence.\n\nBullet points and numbered lists\nTable of contents\nStyles and Templates in Microsoft Word (a time saver)\nZotero (for formatting references)"
+  },
+  {
+    "objectID": "posts/structuring-and-formatting-documents/index.html#example",
+    "href": "posts/structuring-and-formatting-documents/index.html#example",
+    "title": "Structuring and formatting documents",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
+    "objectID": "posts/structuring-and-formatting-documents/index.html#vertical-alignment",
+    "href": "posts/structuring-and-formatting-documents/index.html#vertical-alignment",
+    "title": "Structuring and formatting documents",
+    "section": "Vertical alignment",
+    "text": "Vertical alignment"
+  },
+  {
+    "objectID": "posts/structuring-and-formatting-documents/index.html#tips",
+    "href": "posts/structuring-and-formatting-documents/index.html#tips",
+    "title": "Structuring and formatting documents",
+    "section": "Tips",
+    "text": "Tips\n\nKeep your tables simple\nIn some cases, you may find it easier to\n\nCreate your table in Excel\nCopy it in Word (as a table, not as an image)\nThen use Word to format the table."
   },
   {
     "objectID": "blog.html",
@@ -117,6 +145,13 @@
     "title": "Philippe Mongeon",
     "section": "",
     "text": "Structuring and formatting documents\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Philippe Mongeon",
+    "section": "",
+    "text": "Associate Professor and Chair of the Department of Information Science at Dalhousie University, Director of the QSSLab, Editor-in-Chief of CJILS-RCSIB, and associate member of CIRST."
   },
   {
     "objectID": "publications/2021-aagaard-getting/index.html",
@@ -173,6 +208,20 @@
     "title": "Big Deal Cancellations and Influences on Librarian Decision-Making",
     "section": "",
     "text": "Citation\nCassady, S., Hare, M., Mongeon, P., & Johnson, C. (2025). Big Deal Cancellations and Influences on Librarian Decision-Making. Canadian Journal of Academic Librarianship, 11, 1–33. https://doi.org/10.33137/cjal-rcbu.v11.43905\n\n\nAbstract\nBig Deals initially emerged as cost-saving purchasing models through which academic libraries could quickly grow their collections. Over time, the soaring costs of journal bundles have strained library budgets, and librarians have worked to transition away from Big Deals. Cancellation projects are complex processes involving a large amount of time and labour. Past research has examined how librarians use quantitative and/or qualitative data to make decisions around cancellations, but few go inside the process to understand the subjective factors influencing librarians’ choices. This study investigates the decision-making practices and processes of librarians concerned with the cancellation of Big Deals through interviews conducted at four medium-sized Canadian institutions that underwent cancellation projects from 2015 to 2020. The institutions investigated in this study adopted similar practices in deciding what packages to unbundle and selecting their teams. Differences in how qualitative and quantitative data were used in forming analyses, and the communication methods to counteract opposition heavily influenced the relative success of each library. Libraries seemed most successful if they could perform nuanced and complex data analyses, involved their Liaison librarians in faculty consultations, had the strong support of administrators, and wrapped the project together with an integrated communications plan. A model describing the decision-making steps in the process of unbundling journal packages and the influences that impact each step is presented, followed by recommendations for engaging with each influencing factor, based on the findings of this study.\n\n\nKey figures\n\n\n\nFig 1. Decision-making model for librarians unbundling journal packages"
+  },
+  {
+    "objectID": "publications/2025-Mongeon-Frankenmetrics/index.html",
+    "href": "publications/2025-Mongeon-Frankenmetrics/index.html",
+    "title": "2025-Mongeon-Frankenmetrics",
+    "section": "",
+    "text": "This is a simple placeholder for the manuscript’s main document (Knuth 1984).\n\n\n[1] 2"
+  },
+  {
+    "objectID": "publications/2025-Mongeon-Frankenmetrics/index.html#section",
+    "href": "publications/2025-Mongeon-Frankenmetrics/index.html#section",
+    "title": "2025-Mongeon-Frankenmetrics",
+    "section": "",
+    "text": "This is a simple placeholder for the manuscript’s main document (Knuth 1984).\n\n\n[1] 2"
   },
   {
     "objectID": "publications/2025-mongeon-wos-openalex/index.html",
@@ -327,95 +376,5 @@
     "title": "Philippe Mongeon",
     "section": "",
     "text": "No matching items"
-  },
-  {
-<<<<<<< Updated upstream
-=======
-    "objectID": "posts/structuring-and-formatting-documents/index.html",
-    "href": "posts/structuring-and-formatting-documents/index.html",
-    "title": "Structuring and formatting documents",
-    "section": "",
-    "text": "Why structure matters\nTools to structure your text\nHeading levels\nWord styles\nWord templates\nZotero\nFormatting tables\nFormatting figures"
-  },
-  {
->>>>>>> Stashed changes
-    "objectID": "posts/structuring-and-formatting-documents/index.html#plan",
-    "href": "posts/structuring-and-formatting-documents/index.html#plan",
-    "title": "Structuring and formatting documents",
-    "section": "Plan",
-    "text": "Plan\n\nWhy structure matters\nTools to structure your text\nHeading levels\nWord styles\nWord templates\nZotero\nFormatting tables\nFormatting figures"
-  },
-  {
-    "objectID": "posts/structuring-and-formatting-documents/index.html#why-structure-matters",
-    "href": "posts/structuring-and-formatting-documents/index.html#why-structure-matters",
-    "title": "Structuring and formatting documents",
-    "section": "Why structure matters",
-    "text": "Why structure matters\n\nYour documents typically have readers; help them read and understand your work!\nA cluttered text without structure can reflect or be interpreted as a lack of understanding.\nDo it for you!"
-  },
-  {
-    "objectID": "posts/structuring-and-formatting-documents/index.html#tools-for-formatting-a-document",
-    "href": "posts/structuring-and-formatting-documents/index.html#tools-for-formatting-a-document",
-    "title": "Structuring and formatting documents",
-    "section": "Tools for formatting a document",
-    "text": "Tools for formatting a document\n\nTitle\nHeadings\n\nExample for research articles: Introduction, Method, Results and Discussion (IMRaD).\n\nSubheadings are generally recommended!\n\nAPA guidelines for headings and subheadings formatting.\n\nParagraphs\n\nOne paragraph per idea\nTopic sentence, supporting sentences, concluding sentence.\n\nBullet points and numbered lists\nTable of contents\nStyles and Templates in Microsoft Word (a time saver)\nZotero (for formatting references)"
-  },
-  {
-    "objectID": "posts/structuring-and-formatting-documents/index.html#example",
-    "href": "posts/structuring-and-formatting-documents/index.html#example",
-    "title": "Structuring and formatting documents",
-    "section": "Example",
-    "text": "Example"
-  },
-  {
-    "objectID": "posts/structuring-and-formatting-documents/index.html#vertical-alignment",
-    "href": "posts/structuring-and-formatting-documents/index.html#vertical-alignment",
-    "title": "Structuring and formatting documents",
-    "section": "Vertical alignment",
-    "text": "Vertical alignment"
-  },
-  {
-    "objectID": "posts/structuring-and-formatting-documents/index.html#tips",
-    "href": "posts/structuring-and-formatting-documents/index.html#tips",
-    "title": "Structuring and formatting documents",
-    "section": "Tips",
-    "text": "Tips\n\nKeep your tables simple\nIn some cases, you may find it easier to\n\nCreate your table in Excel\nCopy it in Word (as a table, not as an image)\nThen use Word to format the table."
-  },
-  {
-<<<<<<< Updated upstream
-=======
-    "objectID": "publications/2025-Mongeon-Frankenmetrics/index.html",
-    "href": "publications/2025-Mongeon-Frankenmetrics/index.html",
-    "title": "2025-Mongeon-Frankenmetrics",
-    "section": "",
-    "text": "This is a simple placeholder for the manuscript’s main document (Knuth 1984).\n\n\n[1] 2"
-  },
-  {
-    "objectID": "publications/2025-Mongeon-Frankenmetrics/index.html#section",
-    "href": "publications/2025-Mongeon-Frankenmetrics/index.html#section",
-    "title": "2025-Mongeon-Frankenmetrics",
-    "section": "",
-    "text": "This is a simple placeholder for the manuscript’s main document (Knuth 1984).\n\n\n[1] 2"
-  },
-  {
-    "objectID": "publications/2025-mongeon-gesamp/index.html#data-and-methods",
-    "href": "publications/2025-mongeon-gesamp/index.html#data-and-methods",
-    "title": "The Scientific Contributions of GESAMP",
-    "section": "Data and Methods",
-    "text": "Data and Methods\n\nThe dataset"
-  },
-  {
-    "objectID": "publications/2025-mongeon-gesamp/index.html#results",
-    "href": "publications/2025-mongeon-gesamp/index.html#results",
-    "title": "The Scientific Contributions of GESAMP",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
->>>>>>> Stashed changes
-    "objectID": "posts/structuring-and-formatting-documents/index.html#references",
-    "href": "posts/structuring-and-formatting-documents/index.html#references",
-    "title": "Structuring and formatting documents",
-    "section": "References",
-    "text": "References\n\n\n\n\nWilke, C. 2019. Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures. First edition. Sebastopol, CA: O’Reilly Media."
   }
 ]

@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.32">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <title>Philippe Mongeon – Structuring and formatting documents</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,10 +16,16 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -31,7 +37,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -48,7 +53,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -157,13 +162,9 @@
 <nav role="doc-toc"> 
 <h2 id="toc-title">Table of contents</h2>
 <ul>
-<<<<<<< Updated upstream
-<li><a href="#/plan" id="/toc-plan">Plan</a></li>
-=======
->>>>>>> Stashed changes
-<li><a href="#/part-1---structuring-text" id="/toc-part-1---structuring-text">Part 1 - Structuring text</a>
+<li><a href="#/part-1---structuring-text" id="/toc-part-1---structuring-text">Part 1 - Structuring text</a></li>
+<li><a href="#/part-1---structuring-text-1" id="/toc-part-1---structuring-text-1">Part 1 - Structuring text</a>
 <ul>
-<li><a href="#/why-structure-matters" id="/toc-why-structure-matters">Why structure matters</a></li>
 <li><a href="#/tools-for-formatting-a-document" id="/toc-tools-for-formatting-a-document">Tools for formatting a document</a></li>
 </ul></li>
 <li><a href="#/demo" id="/toc-demo">Demo</a></li>
@@ -174,47 +175,19 @@
 <li><a href="#/vertical-alignment" id="/toc-vertical-alignment">Vertical alignment</a></li>
 <li><a href="#/tips" id="/toc-tips">Tips</a></li>
 </ul></li>
-<<<<<<< Updated upstream
-<li><a href="#/part-3---formatting-figures" id="/toc-part-3---formatting-figures">Part 3 - Formatting figures</a>
-<ul>
-<li><a href="#/references" id="/toc-references">References</a></li>
-</ul></li>
+<li><a href="#/part-3---formatting-figures" id="/toc-part-3---formatting-figures">Part 3 - Formatting figures</a></li>
 </ul>
 </nav>
 </section>
-<section id="plan" class="slide level2 smaller">
-<h2>Plan</h2>
-<ul>
-<li>Why structure matters</li>
-<li>Tools to structure your text</li>
-<li>Heading levels</li>
-<li>Word styles</li>
-<li>Word templates</li>
-<li>Zotero</li>
-<li>Formatting tables</li>
-<li>Formatting figures</li>
-</ul>
-</section>
-<section>
 <section id="part-1---structuring-text" class="title-slide slide level1 smaller center">
 <h1>Part 1 - Structuring text</h1>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream - Why structure matters - Tools to structure your text - Heading levels - Word styles - Word templates - Zotero - Formatting tables - Formatting figures</p>
+</section>
 
-</section>
-<section id="why-structure-matters" class="slide level2 smaller">
-=======
-<li><a href="#/part-3---formatting-figures" id="/toc-part-3---formatting-figures">Part 3 - Formatting figures</a></li>
-<li><a href="#/references" id="/toc-references">References</a></li>
-</ul>
-</nav>
-</section>
 <section>
-<section id="part-1---structuring-text" class="title-slide slide level1 center">
+<section id="part-1---structuring-text-1" class="title-slide slide level1 smaller center">
 <h1>Part 1 - Structuring text</h1>
-
-</section>
-<section id="why-structure-matters" class="slide level2">
->>>>>>> Stashed changes
-<h2>Why structure matters</h2>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes ## Why structure matters {.smaller}</p>
 <ul>
 <li>Your documents typically have readers; help them read and understand your work!</li>
 <li>A cluttered text without structure can reflect or be interpreted as a lack of understanding.</li>
@@ -244,20 +217,12 @@
 <li>Zotero (for formatting references)</li>
 </ul>
 </section></section>
-<<<<<<< Updated upstream
 <section id="demo" class="title-slide slide level1 smaller center">
-=======
-<section id="demo" class="title-slide slide level1 center">
->>>>>>> Stashed changes
 <h1>Demo</h1>
 <p>Styles and templates in Microsoft Word + Zotero</p>
 </section>
 
-<<<<<<< Updated upstream
 <section id="part-2---formatting-tables" class="title-slide slide level1 smaller center">
-=======
-<section id="part-2---formatting-tables" class="title-slide slide level1 center">
->>>>>>> Stashed changes
 <h1>Part 2 - Formatting tables</h1>
 
 </section>
@@ -265,7 +230,7 @@
 <section>
 <section id="basic-rules-of-tables-formatting" class="title-slide slide level1 smaller center">
 <h1>Basic rules of tables formatting</h1>
-<p><span class="citation" data-cites="wilke2019">Wilke (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span> recommends to:</p>
+<p><span class="citation" data-cites="wilke2019">Wilke (<a href="#/part-3---formatting-figures" role="doc-biblioref" onclick="">2019</a>)</span> recommends to:</p>
 <ul>
 <li>Avoid vertical lines</li>
 <li>Avoid horizontal lines between data rows.
@@ -278,11 +243,7 @@
 <li>Align the column header the same way as the content of the columns.</li>
 </ul>
 </section>
-<<<<<<< Updated upstream
 <section id="example" class="slide level2 smaller">
-=======
-<section id="example" class="slide level2">
->>>>>>> Stashed changes
 <h2>Example</h2>
 
 <img data-src="images/clipboard-3819824641.png" class="r-stretch"></section>
@@ -290,11 +251,7 @@
 <h2>Vertical alignment</h2>
 
 <img data-src="images/clipboard-2931975686.png" class="r-stretch"></section>
-<<<<<<< Updated upstream
 <section id="tips" class="slide level2 smaller">
-=======
-<section id="tips" class="slide level2">
->>>>>>> Stashed changes
 <h2>Tips</h2>
 <ul>
 <li>Keep your tables simple</li>
@@ -306,12 +263,7 @@
 </ul></li>
 </ul>
 </section></section>
-<<<<<<< Updated upstream
-<section>
-<section id="part-3---formatting-figures" class="title-slide slide level1 smaller center">
-=======
-<section id="part-3---formatting-figures" class="title-slide slide level1 center">
->>>>>>> Stashed changes
+<section id="part-3---formatting-figures" class="title-slide slide level1 smaller scrollable">
 <h1>Part 3 - Formatting figures</h1>
 <ul>
 <li>All axes should be labelled</li>
@@ -322,27 +274,15 @@
 <li>no 3D!</li>
 <li>For guidance on selecting appropriate graph types, see <a href="https://pmongeon.github.io/mgmt2605/ch10.html">MGMT2505 - Working with data course (ch.&nbsp;10 to 12)</a>.</li>
 </ul>
-</section>
-<<<<<<< Updated upstream
-<section id="references" class="slide level2 smaller scrollable">
-<h2>References</h2>
-=======
-
-<section id="references" class="title-slide slide level1 smaller scrollable">
-<h1>References</h1>
->>>>>>> Stashed changes
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream ## References {.smaller} ======= # References &gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-wilke2019" class="csl-entry" role="listitem">
-Wilke, C. 2019. <em>Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures</em>. First edition. Sebastopol, CA: O’Reilly Media.
+Wilke, C. 2019. <em>Fundamentals of Data Visualization: A Primer on Making Informative and Compelling Figures</em>. First edition. O’Reilly Media.
 </div>
 </div>
-<<<<<<< Updated upstream
-</section></section>
-=======
 </section>
->>>>>>> Stashed changes
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -534,7 +474,7 @@ Wilke, C. 2019. <em>Fundamentals of Data Visualization: A Primer on Making Infor
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -608,13 +548,14 @@ Wilke, C. 2019. <em>Fundamentals of Data Visualization: A Primer on Making Infor
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

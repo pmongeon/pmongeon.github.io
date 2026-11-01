@@ -14,8 +14,8 @@ website:
         text: Teaching
 #      - href: talks.qmd
 #        text: Talks
-      - href: publications.qmd
-        text: Publications
+      - href: https://qsslab.github.io/research.html
+        text: Research
 #      - href: blog.qmd
 #        text: Blog
 format:
